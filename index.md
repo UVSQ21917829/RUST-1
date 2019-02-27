@@ -98,6 +98,7 @@ Le _ est utilisé pour le cas ou le résultat ne signifie aucun des expressions 
 
 Les boucles en Rust sont comme les autres langage, elle continue à exécuter tant que la condition est toujours vérifiés 
 ## La boucle while :
+
 ## Exemple :
 
 ```markdown
@@ -113,6 +114,8 @@ while i < 10 {
 Ici le programme affichera a chaque fois « i inferieur a 10 » tant que le i inferieur (la condition i<10) 
 
 •	Vous noterez encore une fois qu'il n'y a pas de parenthèses autour de la condition !
+
+
 •	Tout comme pour les conditions, les accolades sont encore une fois obligatoires 
 
 ## Loop :
