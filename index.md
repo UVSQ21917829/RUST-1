@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+## Bienvenue sur ma page 
+## Base du langage
 
-You can use the [editor on GitHub](https://github.com/UVSQ21807686/RUST/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## 1.1 introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ Rust est un langage de programmation système moderne mettant l'accent sur la sécurité, la vélocité et la concurrence, compilé et multi paradigme. C'est un croisement entre langage impératif (C), objet (C++), fonctionnel (Ocaml) et concurrent (Erlang). Le développement du langage RUST a commencé depuis 2009 par la fondation Mozila et aussi avec l’aide de la communauté des développeurs Rust qui sont très présent sur Github.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Premier programme :
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+fn main() {
+    println!("Bonjour tout le monde");
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Nous avons crée un simple programme qui affiche le message (bonjour tout le monde).
 
-### Jekyll Themes
+### Déclaration des variables
+ En rust les variables sont touts constant par défaut de déclaration.
+ 
+ ## Un exemple :
+ ```markdown
+let i = 1;
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/UVSQ21807686/RUST/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+i = 2; // ceci n’est pas valide  !
+```
 
-### Support or Contact
+si on souhaite déclarer une variables mutable (modifiable) il faut utiliser le mot clé **mut** 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Un exemple :
+
+ ```markdown
+let mut i = 1;
+
+i = 2; // ceci est valide  !
+```
+## les Types :
+
+  Comme tout les autres langages il existe plusieurs types de variables en rust,on a toujours des entiers, des flottants ,Strings etc.., La seule différence viendra de leur écriture. Par exemple, pour déclarer un entier de 32 bits, vous ferez :
+
+
+ ```markdown
+let i : i32 = 0;
+// ou :
+let i = 0i32;
+```
+Donc pour résumer, voici une petite liste des différents types de base disponibles : i8 (un entier signé de 8 bits),i16,i32,i64,u18(un entier non signé de 8bits),u16,u32,u64,f32(un flottant de 32bite),f64,String…
+
