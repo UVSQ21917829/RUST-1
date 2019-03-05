@@ -20,3 +20,8 @@ Après avoir créer votre fichier.rs sur sublime text ou autre avec le compilate
 ![figure](outils3.png)
 
   ![figure](outils4.png)
+  
+ ## Le compilateur de Rust▲
+Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir télécharger le compilateur de Rust disponible [ici](https://www.rust-lang.org/), puis l'installer.
+
+
