@@ -70,7 +70,7 @@ Pattern matching : c’est une autre façon de reformuler les conditions, d’un
 ```markdown
 
 let marque= "206";
-
+let mut i = 1;
 match marque {
     "Partner " => {
         println!("Peugeot");
@@ -158,4 +158,63 @@ loop {
 }
 
 ```
+### For :
 
+La boucle for consiste à exécuter le programme en suivant la condition de départ 
+## Exemple :
+
+```markdown
+
+for i in 0..10 {
+    println!("la valeur de i est  : {}", i);
+}
+
+```
+ Ce programme affiche a chaque fois la valeur de i de 0 a 9
+
+### Les fonctions :
+
+ Pour utiliser une fonction il faut suivre la syntaxe suivante 
+```markdown 
+ 
+fn nom_fonction(les variable d’entrer)->type_sortie
+```
+## exemple :
+```markdown
+fn addition(nb1: i32, nb2: i32) -> i32;
+
+
+```
+
+ici on a déclarer une fonction nommé addition qui prend en paramètre deux variable de type i32 et qui return un i32 
+
+## exemple d’utilisation :
+```markdown
+fn main() {
+    println!("1 + 2 = {}", addition(1, 2));
+}
+
+fn addition(nb1: i32, nb2: i32) -> i32 {
+    nb1 + nb2
+}
+```
+
+Ce programme affiche 1 + 2 =3
+
+
+ et pour plus de decumentations veuillez consulter ces **liens suivants**	:
+   
+   •le site internet [**rust-lang.org**](https://www.rust-lang.org/)
+   
+   •la [**decumentation**](https://doc.rust-lang.org/stable/std/)
+   
+   •le [**depot github**](https://github.com/rust-lang/rust)
+   
+   •le [**rustbook**](https://doc.rust-lang.org/stable/book/)
+   
+   en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémouire 
+   plus sure ,un point qu'on ne lui disputera pas 
+    
+
+ 
+ 
