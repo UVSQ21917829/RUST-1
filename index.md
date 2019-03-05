@@ -1,4 +1,4 @@
-  [**es outils de developpement**](https://uvsq21807686.github.io/RUST/index2)          [**les principales bibiothéques**](https://uvsq21807686.github.io/RUST/index2)             
+  [**es outils de developpement**](https://uvsq21807686.github.io/RUST/index2) ------------        [**les principales bibiothéques**](https://uvsq21807686.github.io/RUST/index2)             
 ## Bienvenue sur ma page 
 ## Base du langage
 
