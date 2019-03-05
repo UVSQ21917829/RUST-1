@@ -14,6 +14,9 @@ qui permet d'éditer, compiler et exécuter des projets complets (répartis sur 
 Si vous n’utilisez pas l’éditeur en ligne .
 
 Après avoir créer votre fichier.rs sur sublime text ou autre avec le compilateur installer vous n’avez plus compilé le fichier comme ceci :
+
+
+
 ![figure](outils3.png)
 
   ![figure](outils4.png)
