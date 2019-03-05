@@ -200,3 +200,21 @@ fn addition(nb1: i32, nb2: i32) -> i32 {
 ```
 
 Ce programme affiche 1 + 2 =3
+
+
+ et pour plus de decumentations veuillez consulter ces **liens suivants**	:
+   
+   •le site internet [**rust-lang.org**](https://www.rust-lang.org/)
+   
+   •la [**decumentation**](https://doc.rust-lang.org/stable/std/)
+   
+   •le [depot github](https://github.com/rust-lang/rust)
+   
+   •le [rustbook](https://doc.rust-lang.org/stable/book/)
+   
+   en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémouire 
+   plus sure ,un point qu'on ne lui disputera pas 
+    
+
+ 
+ 
