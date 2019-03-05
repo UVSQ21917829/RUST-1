@@ -206,7 +206,7 @@ Ce programme affiche 1 + 2 =3
    
    •le site internet [**rust-lang.org**](https://www.rust-lang.org/)
    
-   •la [**decumentations**](https://doc.rust-lang.org/stable/std/)
+   •la [**decumentation**](https://doc.rust-lang.org/stable/std/)
    
    •le [depot github](https://github.com/rust-lang/rust)
    
