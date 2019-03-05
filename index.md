@@ -70,7 +70,125 @@ Pattern matching : c’est une autre façon de reformuler les conditions, d’un
 ```markdown
 
 let marque= "206";
+4
 
+## 1.1 introduction
+
+5
+
+​
+
+6
+
+ Rust est un langage de programmation système moderne mettant l'accent sur la sécurité, la vélocité et la concurrence, compilé et multi paradigme. C'est un croisement entre langage impératif (C), objet (C++), fonctionnel (Ocaml) et concurrent (Erlang). Le développement du langage RUST a commencé depuis 2009 par la fondation Mozila et aussi avec l’aide de la communauté des développeurs Rust qui sont très présent sur Github.
+
+7
+
+​
+
+8
+
+### Premier programme :
+
+9
+
+​
+
+10
+
+```markdown
+
+11
+
+fn main() {
+
+12
+
+    println!("Bonjour tout le monde");
+
+13
+
+}
+
+14
+
+```
+
+15
+
+​
+
+16
+
+Nous avons crée un simple programme qui affiche le message (bonjour tout le monde).
+
+17
+
+​
+
+18
+
+### Déclaration des variables
+
+19
+
+ En rust les variables sont touts constant par défaut de déclaration.
+
+20
+
+ 
+
+21
+
+ ## Un exemple :
+
+22
+
+ ```markdown
+
+23
+
+let i = 1;
+
+24
+
+​
+
+25
+
+i = 2; // ceci n’est pas valide  !
+
+26
+
+```
+
+27
+
+​
+
+28
+
+si on souhaite déclarer une variables mutable (modifiable) il faut utiliser le mot clé **mut** 
+
+29
+
+​
+
+30
+
+## Un exemple :
+
+31
+
+​
+
+32
+
+ ```markdown
+
+33
+
+let mut i = 1;
 match marque {
     "Partner " => {
         println!("Peugeot");
@@ -208,9 +326,9 @@ Ce programme affiche 1 + 2 =3
    
    •la [**decumentation**](https://doc.rust-lang.org/stable/std/)
    
-   •le [depot github](https://github.com/rust-lang/rust)
+   •le [**depot github**](https://github.com/rust-lang/rust)
    
-   •le [rustbook](https://doc.rust-lang.org/stable/book/)
+   •le [**rustbook**](https://doc.rust-lang.org/stable/book/)
    
    en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémouire 
    plus sure ,un point qu'on ne lui disputera pas 
