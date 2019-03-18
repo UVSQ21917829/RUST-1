@@ -68,14 +68,25 @@ Sur le plan technique, les inserts Rust
   ### Mots clés
   
 **as**	    Le mot clé pour attribuer une valeur à un type.
+
 **const**	  Le mot clé pour définir les constantes.
+
 **crate**	  Le crate mot clé.
+
 **enum**	  Pour définir des énumérations.
+
 **extern**  Pour les connexions externes en code Rust.
+
 **fn**	    Le mot clé pour définir les fonctions.
+
 **for**	    Le for mot clé.
+
 **if**	    Si déclarations et expressions.
+
 **impl**	  Le mot clé définissant l'implémentation.
+
 **let**	    Le mot clé de liaison variable.
+
 **loop**	  Le mot-clé définissant la boucle.
+
 **struct**	Le mot-clé utilisé pour définir les structures.
