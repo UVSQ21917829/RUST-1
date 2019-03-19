@@ -1,4 +1,4 @@
-[**bibliothèques**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèque tierce**](https://uvsq21807686.github.io/RUST/trc)-----[**outils de develeppement**](https://uvsq21807686.github.io/RUST/index2)-----[**resource d'apprentissage**](https://uvsq21807686.github.io/RUST/rsc)   
+[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)   
 
 
 ## Bienvenue sur ma page 
