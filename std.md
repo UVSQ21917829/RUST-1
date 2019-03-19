@@ -1,11 +1,11 @@
 [**Base du langage**](https://uvsq21807686.github.io/RUST)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)  
 
-## Les bibliotheque standards 
+## Les bibliothèques standards :
 
-La bibliothèque Rust Standard constitue la base du logiciel portable Rust, un ensemble d’abstractions partagées minimales et testées au combat pour l’ écosystème plus vaste de Rust . Il offre les types de base, comme **Vec<T>** et **Option<T>**, définies par la bibliothèque des opérations sur des **primitives de langage** , **macros standard** , **E / S** et **multithreading** .
+La bibliothèque Rust Standard constitue la base du logiciel portable Rust, un ensemble d’abstractions partagées minimales et testées au combat pour l’ écosystème plus vaste de Rust . Il offre les types de base, comme **Vec<T>** et **Option<T>**, définies par la bibliothèque des opérations sur des **primitives de langage** ,  **macros standard** , **E/S** et **multithreading** .
 **std** est disponible par défaut pour toutes les caisses Rust, comme si chacune d'entre elles contenait une extern crate **std;** importation à la racine de la caisse . Par conséquent, la bibliothèque standard est accessible dans les useinstructions via le chemin **std**, comme dans **use std::env**, ou dans les expressions via le chemin absolu **::std**, comme dans **::std::env::args**.
 
-###Cargo
+### Cargo
 
 Cargo est le gestionnaire de colis Rust . Cargo télécharge les dépendances de votre paquet Rust, compile vos paquets, crée des paquets distribuables et les télécharge sur [crates.io](https://crates.io/) , le registre de paquets de la communauté Rust . 
 
