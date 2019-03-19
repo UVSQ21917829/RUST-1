@@ -2,8 +2,8 @@
 
 ## Les bibliothèques standards :
 
-La bibliothèque Rust Standard constitue la base du logiciel portable Rust, un ensemble d’abstractions partagées minimales et testées au combat pour l’ écosystème plus vaste de Rust . Il offre les types de base, comme **Vec<T>** et **Option<T>**, définies par la bibliothèque des opérations sur des **primitives de langage** ,  **macros standard** , **E/S** et **multithreading** .
-**std** est disponible par défaut pour toutes les caisses Rust, comme si chacune d'entre elles contenait une extern crate **std;** importation à la racine de la caisse . Par conséquent, la bibliothèque standard est accessible dans les useinstructions via le chemin **std**, comme dans **use std::env**, ou dans les expressions via le chemin absolu **::std**, comme dans **::std::env::args**.
+La bibliothèque Rust Standard constitue la base du logiciel portable Rust, un ensemble d’abstractions partagées minimales et testées au combat pour l’ écosystème plus vaste de Rust . Il offre les types de base, comme _Vec<T>_ et _Option<T>_, définies par la bibliothèque des opérations sur des _primitives de langage_ ,  _macros standard_ , _E/S_ et _multithreading_ .
+_std_ est disponible par défaut pour toutes les caisses Rust, comme si chacune d'entre elles contenait une extern crate _std;_ importation à la racine de la caisse . Par conséquent, la bibliothèque standard est accessible dans les useinstructions via le chemin _std_, comme dans _use std::env_, ou dans les expressions via le chemin absolu _::std_, comme dans _::std::env::args_.
 
 ### Cargo
 
@@ -14,6 +14,7 @@ La bibliothèque Rust Standard est divisée en un certain nombre de modules cibl
 
 
 ### modules
+
  Premierement les méthodes implicites sur les modules  sont documentées ainsi quelques exemples :
 ```markdown
 **alloc**	  API d'allocation de mémoire.
