@@ -18,17 +18,17 @@
   
  •	 ↑ (en) [« Doc language FAQ »](https://github.com/rust-lang/rust) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fgithub.com%2Fmozilla%2Frust%2Fwiki%2FDoc-language-FAQ) (consulté le 21 octobre 2012).
   
- •	 ↑ [https://doc.rust-lang.org/book/second-edition/ch17-01-what-is-oo.html](https://doc.rust-lang.org/book/second-edition/ch17-01-        what-is-oo.html) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fsecond-edition%2Fch17-      01-what-is-oo.html)
+ •	 ↑ [https://doc.rust-lang.org/book/second-edition/ch17-01-what-is-oo.html](https://doc.rust-lang.org/book/second-edition/ch17-01-what-is-oo.html)  [[ archive ]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fsecond-edition%2Fch17-01-what-is-oo.html)
   
- •	 ↑ (en) [« The Mozilla Manifesto »](https://www.mozilla.org/en-US/about/manifesto/) [[archive]](http://archive.wikiwix.com/cache/?        url=https%3A%2F%2Fwww.mozilla.org%2Fabout%2Fmanifesto.en.html) (consulté le 9 avril 2012).
+ •	 ↑ (en) [« The Mozilla Manifesto »](https://www.mozilla.org/en-US/about/manifesto/) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.mozilla.org%2Fabout%2Fmanifesto.en.html)
 
- •	 ↑ [https://www.rust-lang.org/fr-FR/faq.html#what-is-this-projects-goal](https://www.rust-lang.org/fr-FR/faq.html#what-is-this-          projects-goal) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rust-lang.org%2Ffr-FR%2Ffaq.html%23what-is-this-      projects-goal)
+ •	 ↑ [https://www.rust-lang.org/fr-FR/faq.html#what-is-this-projects-goal](https://www.rust-lang.org/fr-FR/faq.html#what-is-this-projects-goal)  [[ archive ]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rust-lang.org%2Ffr-FR%2Ffaq.html%23what-is-this-projects-goal)
 
- •	 ↑ [https://doc.rust-lang.org/nomicon/what-unsafe-does.html](https://doc.rust-lang.org/nomicon/what-unsafe-does.html) [[archive]]        (http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fnomicon%2Fwhat-unsafe-does.html)
+ •	 ↑ [https://doc.rust-lang.org/nomicon/what-unsafe-does.html](https://doc.rust-lang.org/nomicon/what-unsafe-does.html)[[ archive ]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fnomicon%2Fwhat-unsafe-does.html)
 
- •	 [https://doc.rust-lang.org/book/second-edition/ch06-01-defining-an-enum.html#the-option-enum-and-its-advantages-over-null-values ]      (https://doc.rust-lang.org/book/second-edition/ch06-01-defining-an-enum.html#the-option-enum-and-its-advantages-over-null-values)        [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fsecond-edition%2Fch06-01-defining-an-        enum.html%23the-option-enum-and-its-advantages-over-null-values)
+ •	↑ [https://doc.rust-lang.org/book/second-edition/ch06-01-defining-an-enum.html#the-option-enum-and-its-advantages-over-null-values](https://doc.rust-lang.org/book/second-edition/ch06-01-defining-an-enum.html#the-option-enum-and-its-advantages-over-null-values)  [[ archive ]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fsecond-edition%2Fch06-01-defining-an-enum.html%23the-option-enum-and-its-advantages-over-null-values)
  
- •	 [« Présentation de Rust sur Léa-Linux »](http://lea-linux.org/documentations/Rust) [[archive]](http://archive.wikiwix.com/cache/?        url=http%3A%2F%2Flea-linux.org%2Fdocumentations%2FRust)
+ •  ↑ [« Présentation de Rust sur Léa-Linux »](http://lea-linux.org/documentations/Rust) [[archive]](http://archive.wikiwix.com/cache/?url=http%3A%2F%2Flea-linux.org%2Fdocumentations%2FRust) 
  
- •	 ↑ [« Shipping Rust in Firefox ★ Mozilla Hacks – the Web developer blog »](https://hacks.mozilla.org/2016/07/shipping-rust-in-          firefox/) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fhacks.mozilla.org%2F2016%2F07%2Fshipping-rust-in-              firefox%2F), sur hacks.mozilla.org
+
  
