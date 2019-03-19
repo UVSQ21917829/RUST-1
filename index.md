@@ -205,7 +205,7 @@ fn addition(nb1: i32, nb2: i32) -> i32 {
 Ce programme affiche 1 + 2 =3
 
 
- et pour plus de decumentations veuillez consulter ces **liens suivants**	:
+ Et pour plus de documentations veuillez consulter ces **liens suivants**	:
    
    •le site internet [**rust-lang.org**](https://www.rust-lang.org/)
    
