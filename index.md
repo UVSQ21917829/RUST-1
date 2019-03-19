@@ -1,4 +1,4 @@
-[**Principales bibliothèques du langage **](https://uvsq21807686.github.io/RUST/std)[**Principales bibliothèques tierces **](https://uvsq21807686.github.io/RUST/trc) ------------ [**Outils de developpement**](https://uvsq21807686.github.io/RUST/index2) ------------  [**Ressources d’apprentissages**](https://uvsq21807686.github.io/RUST/rsc)  
+[**Principales bibliothèques du langage **](https://uvsq21807686.github.io/RUST/std)------[**Principales bibliothèques tierces **](https://uvsq21807686.github.io/RUST/trc)------[**Outils de developpement**](https://uvsq21807686.github.io/RUST/index2) -------[**Ressources d’apprentissages**](https://uvsq21807686.github.io/RUST/rsc)  
 
 
 ## Bienvenue sur ma page 
@@ -205,7 +205,7 @@ fn addition(nb1: i32, nb2: i32) -> i32 {
 Ce programme affiche 1 + 2 =3
 
 
- et pour plus de decumentations veuillez consulter ces **liens suivants**	:
+ Et pour plus de documentations veuillez consulter ces **liens suivants**	:
    
    •le site internet [**rust-lang.org**](https://www.rust-lang.org/)
    
