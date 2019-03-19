@@ -16,7 +16,7 @@
   
  •	 ↑ (en) [« The Rust Programming Language »](https://www.rust-lang.org/) [[archive]](http://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.rust-lang.org%2F) 
   
- •	 ↑ (en) [« Doc language FAQ »](https://github.com/rust-lang/rust) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fgithub.com%2Fmozilla%2Frust%2Fwiki%2FDoc-language-FAQ) (consulté le 21 octobre 2012).
+ •	 ↑ (en) [« Doc language FAQ »](https://github.com/rust-lang/rust) [[archive]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fgithub.com%2Fmozilla%2Frust%2Fwiki%2FDoc-language-FAQ)
   
  •	 ↑ [https://doc.rust-lang.org/book/second-edition/ch17-01-what-is-oo.html](https://doc.rust-lang.org/book/second-edition/ch17-01-what-is-oo.html)  [[ archive ]](http://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fsecond-edition%2Fch17-01-what-is-oo.html)
   
