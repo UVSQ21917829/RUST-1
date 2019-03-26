@@ -76,7 +76,7 @@ Sur le plan technique, les inserts Rust
   dans chaque module.
   
   
-  ### Mots clés
+### Mots clés
   
 **as**	       Le mot clé pour attribuer une valeur à un type.
 
