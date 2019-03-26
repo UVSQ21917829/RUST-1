@@ -1,7 +1,7 @@
 [**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)   
 
 
-## Bienvenue sur ma page 
+ 
 ## Base du langage
 
 ## 1.1 introduction
@@ -19,7 +19,7 @@ fn main() {
 Nous avons crée un simple programme qui affiche le message (bonjour tout le monde).
 
 ### Déclaration des variables
- En rust les variables sont touts constant par défaut de déclaration.
+ En rust les variables sont toutes constantes par défaut de déclaration.
  
  ## Un exemple :
  ```markdown
@@ -28,7 +28,7 @@ let i = 1;
 i = 2; // ceci n’est pas valide  !
 ```
 
-si on souhaite déclarer une variables mutable (modifiable) il faut utiliser le mot clé **mut** 
+si on souhaite déclarer une variable mutable (modifiable) il faut utiliser le mot clé **mut** 
 
 ## Un exemple :
 
@@ -39,7 +39,7 @@ i = 2; // ceci est valide  !
 ```
 ## les Types :
 
-  Comme tout les autres langages il existe plusieurs types de variables en rust,on a toujours des entiers, des flottants ,Strings etc.., La seule différence viendra de leur écriture. Par exemple, pour déclarer un entier de 32 bits, vous ferez :
+  Comme touts les autres langages il existe plusieurs types de variables en rust,on a toujours des entiers, des flottants ,Strings etc.., La seule différence viendra de leur écriture. Par exemple, pour déclarer un entier de 32 bits, vous ferez :
 
 
  ```markdown
@@ -51,6 +51,7 @@ Donc pour résumer, voici une petite liste des différents types de base disponi
 
 ## Incrémentation : 
 pour incrémenter il faudra utiliser la syntaxe : 
+
 ```markdown
           i += 1;
 ```
@@ -69,7 +70,7 @@ if moyenne >= 10 {
 }
 
 ```
-Pattern matching : c’est une autre façon de reformuler les conditions, d’une manière on pourra comparer les expressions ainsi :
+**Pattern matching** : c’est une autre façon de reformuler les conditions, d’une manière on pourra comparer les expressions ainsi :
 ```markdown
 
 let marque= "206";
@@ -208,14 +209,12 @@ Ce programme affiche 1 + 2 =3
  Et pour plus de documentations veuillez consulter ces **liens suivants**	:
    
    •le site internet [**rust-lang.org**](https://www.rust-lang.org/)
-   
-   •la [**decumentation**](https://doc.rust-lang.org/stable/std/)
-   
+  
    •le [**depot github**](https://github.com/rust-lang/rust)
    
    •le [**rustbook**](https://doc.rust-lang.org/stable/book/)
    
-   en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémouire 
+   en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémoire 
    plus sure ,un point qu'on ne lui disputera pas 
     
 
