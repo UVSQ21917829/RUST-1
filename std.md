@@ -5,10 +5,6 @@
 La bibliothèque Rust Standard constitue la base du logiciel portable Rust, un ensemble d’abstractions partagées minimales et testées au combat pour l’ écosystème plus vaste de Rust . Il offre les types de base, comme Vec et  Option, définies par la bibliothèque des opérations sur des _primitives de langage_ ,  _macros standard_ , _E/S_ et _multithreading_.
 _std_ est disponible par défaut pour toutes les caisses Rust, comme si chacune d'entre elles contenait une extern crate _std;_ importation à la racine de la caisse . Par conséquent, la bibliothèque standard est accessible dans les useinstructions via le chemin _std_, comme dans _use std::env_, ou dans les expressions via le chemin absolu _::std_, comme dans _::std::env::args_.
 
-### Cargo
-
-Cargo est le gestionnaire de colis Rust . Cargo télécharge les dépendances de votre paquet Rust, compile vos paquets, crée des paquets distribuables et les télécharge sur [crates.io](https://crates.io/) , le registre de paquets de la communauté Rust . 
-
 
 La bibliothèque Rust Standard est divisée en un certain nombre de modules ciblés, .  La documentation des modules comprend généralement une vue d'ensemble du module ainsi que des exemples.
 
@@ -16,6 +12,7 @@ La bibliothèque Rust Standard est divisée en un certain nombre de modules cibl
 ### modules
 
  Premierement les méthodes implicites sur les modules  sont documentées ainsi quelques exemples :
+ 
 ```markdown
 **alloc**	   API d'allocation de mémoire.
 **ascii**	   Operations on ASCII strings and characters.
@@ -31,6 +28,7 @@ La bibliothèque Rust Standard est divisée en un certain nombre de modules cibl
 ```
 
 ### les types primitifs
+
 Deuxièmement, les méthodes implicites sur les types primitifs sont documentées ainsi quelques exemples :
 
 ```markdown
@@ -44,6 +42,7 @@ Deuxièmement, les méthodes implicites sur les types primitifs sont documentée
 ```
 
 ### les macros
+
  ```markdown
 **assert**	           Assurez-vous qu'une expression booléenne est trueà l'exécution.
 **assert_eq**	        Affirme que deux expressions sont égales (en utilisant PartialEq).
@@ -58,8 +57,8 @@ Deuxièmement, les méthodes implicites sur les types primitifs sont documentée
  
  ```
  
-### The Rust Prelude
-Le prélude est la liste des éléments que Rust importe automatiquement dans chaque programme Rust. Elle est aussi petite que possible et se concentre sur des éléments, en particulier des traits, qui sont utilisés dans presque tous les programmes Rust.
+### Le prélude en Rust
+Le prélude est la liste des éléments que Rust importé automatiquement dans chaque programme Rust. Elle est aussi petite que possible et se concentre sur des éléments, en particulier des traits, qui sont utilisés dans presque tous les programmes Rust.
 
 Sur le plan technique, les inserts Rust
 
@@ -92,12 +91,12 @@ Sur le plan technique, les inserts Rust
 
 **for**	      Le for mot clé.
 
-**if**	    Si déclarations et expressions.
+**if**	       Si déclarations et expressions.
 
-**impl**	  Le mot clé définissant l'implémentation.
+**impl**	     Le mot clé définissant l'implémentation.
 
-**let**	    Le mot clé de liaison variable.
+**let**	      Le mot clé de liaison variable.
 
-**loop**	  Le mot-clé définissant la boucle.
+**loop**	     Le mot-clé définissant la boucle.
 
-**struct**	Le mot-clé utilisé pour définir les structures.
+**struct**    	Le mot-clé utilisé pour définir les structures.
