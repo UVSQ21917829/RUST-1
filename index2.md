@@ -83,8 +83,8 @@ La syntaxe utilisée pour la mise en forme est le Markdown (comme sur Linuxfr), 
 
 Il y a quelques règles cependant :
 
-    La première phrase d’un commentaire sera prise comme résumé de la suite du commentaire
-    Seuls les titres indiqués avec un seul # (et non plusieurs # ou plusieurs = en dessous du texte) sont interprétés par rustdoc. Cette règle sera assouplie dans le futur.
+  La première phrase d’un commentaire sera prise comme résumé de la suite du commentaire
+  Seuls les titres indiqués avec un seul # (et non plusieurs # ou plusieurs = en dessous du texte) sont interprétés par                                                 rustdoc. Cette règle sera assouplie dans le futur.
 
 Il y a également quelques conventions :
 
