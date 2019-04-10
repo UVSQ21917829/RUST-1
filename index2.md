@@ -27,7 +27,7 @@ Après avoir créer votre fichier.rs sur sublime text ou autre avec le compilate
 ## Le compilateur de Rust
 Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir télécharger le compilateur de Rust disponible [ici](https://www.rust-lang.org/), puis l'installer.
 
-## Tests Unitaire
+## Tests Unitaires
   Pour faire une test unitaire en rust il suffit d'ajouter #[test] sur la ligne avant la fonction de test,la fonction ne doit prendre aucun argument en paramétre et ne rien renvoyer.
   Les fonctions check, fail, assert (ainsi que assert_eq, assert_approx_eq, etc) sont très utiles pour les tests unitaires.
   ### Exemple :
