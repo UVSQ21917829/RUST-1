@@ -120,4 +120,25 @@ html_favicon_url = "http://www.rust-lang.org/favicon.ico",
 html_root_url = "http://static.rust-lang.org/doc/master")];
 
 ```
+ ## rustpkg
+ 
+ **rustpkg** est un outil qui permet de faire des paquets Rust, largement inspiré du gestionnaire de paquets de Go. On peut donner des informations à cet outil grâce aux attributs (par exemple, #[licence = "ma_licence"] et #[link(vers = "mon_numéro_de_version")]).
 
+Un espace de travail valide contient les dossiers suivants :
+
+```markdown 
+   
+  src/, qui contient un dossier par paquet (ex : src/foo/main.rs) ;
+    lib/, rustpkg install va y installer les bibliothèques nécessaires dans un sous-dossier (ex : si libbar est nécessaire à foo,         alors elle sera installée à lib/x86_64-apple-darwin/libbar-[hash].dylib) ;
+    bin/, pour les exécutables (ex : bin/foo) ;
+    build/, rustpkg build va y stocker les fichiers temporaires de compilation (ex : build/x86_64-apple-darwin/foo/main.o).
+
+
+```
+L’ID d’un paquet prend la forme d’une URL (par exemple, github.com/mozilla/rust si c’est un dépôt distant ou /foo/bar/ si c’est un dépôt local). Une version peut être précisée :
+
+   Un tag (ex : github.com/mozilla/rust#0.3). Dans ce cas, rustpkg va vérifier que le dépôt contient bien un tag nommé 0.3 ;
+    Une révision particulière (ex : github.com/mozilla/rust#release-0.7). Comme ça n’est pas un nombre décimal, rustpkg passe la refspec (ce qu’il y a après le #) au système de gestion de version sans l’interpréter. Cela compte comme un ID de paquet à part entière, là où une nouvelle version peut satisfaire la dépendance envers une ancienne version ;
+    Une révision particulière (ex : github.com/mozilla/rust#5c4cd30f80). La _refspec est également passée directement au système de gestion de version.
+
+Une fois bien paramétré, on a accès aux commandes rustpkg build, rustpkg clean, rustpkg install, et rustpkg test. Autant dire que ça automatise pas mal de choses !
