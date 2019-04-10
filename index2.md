@@ -149,10 +149,7 @@ L’ID d’un paquet prend la forme d’une URL (par exemple, github.com/mozilla
 
 Une fois bien paramétré, on a accès aux commandes rustpkg build, rustpkg clean, rustpkg install, et rustpkg test. Autant dire que ça automatise pas mal de choses !
 
- 
- 
- 
- ## Cargo
+## Cargo
 
 Cargo est le gestionnaire de colis Rust . Cargo télécharge les dépendances de votre paquet Rust, compile vos paquets, crée des paquets distribuables et les télécharge sur [crates.io](https://crates.io/) , le registre de paquets de la communauté Rust . 
 
