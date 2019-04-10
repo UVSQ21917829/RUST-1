@@ -129,8 +129,12 @@ Un espace de travail valide contient les dossiers suivants :
 ```markdown 
    
   src/, qui contient un dossier par paquet (ex : src/foo/main.rs) ;
-    lib/, rustpkg install va y installer les bibliothèques nécessaires dans un sous-dossier (ex : si libbar est nécessaire à foo,         alors elle sera installée à lib/x86_64-apple-darwin/libbar-[hash].dylib) ;
+  
+    lib/, rustpkg install va y installer les bibliothèques nécessaires dans un sous-dossier 
+    (ex : si libbar est nécessaire à foo,alors elle sera installée à lib/x86_64-apple-darwin/libbar-[hash].dylib) ;
+    
     bin/, pour les exécutables (ex : bin/foo) ;
+    
     build/, rustpkg build va y stocker les fichiers temporaires de compilation (ex : build/x86_64-apple-darwin/foo/main.o).
 
 
