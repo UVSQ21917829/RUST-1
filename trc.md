@@ -58,3 +58,6 @@ Une macro pour déclarer une statique évaluée paresseusement dans Rust.
 
 À l’aide de cette macro, il est possible d’avoir staticbesoin d’exécuter du code lors de l’exécution pour pouvoir être initialisé. Cela inclut tout ce qui nécessite des allocations de tas, comme des vecteurs ou des cartes de hachage, ainsi que tout ce qui nécessite le calcul d'appels de fonctions non const.
 
+## syscallz-rs
+
+Bibliothèque simple seccomp pour la rouille. Veuillez noter que la liste des appels système est incomplète et que vous devrez peut-être envoyer un PR pour que vos appels système soient inclus. Cette caisse se libère fréquemment si la liste d'appels système a été mise à jour.
