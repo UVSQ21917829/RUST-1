@@ -145,3 +145,31 @@ L’ID d’un paquet prend la forme d’une URL (par exemple, github.com/mozilla
     Une révision particulière (ex : github.com/mozilla/rust#5c4cd30f80). La _refspec est également passée directement au système de gestion de version.
 
 Une fois bien paramétré, on a accès aux commandes rustpkg build, rustpkg clean, rustpkg install, et rustpkg test. Autant dire que ça automatise pas mal de choses !
+
+ ### Cargo
+
+Cargo est le gestionnaire de colis Rust . Cargo télécharge les dépendances de votre paquet Rust, compile vos paquets, crée des paquets distribuables et les télécharge sur [crates.io](https://crates.io/) , le registre de paquets de la communauté Rust . 
+
+  
+  Commençons par le fichier **Cargo.toml**, ajoutez ces deux lignes :
+```markdown 
+[dependencies]
+time = "0.1"
+```
+
+Nous avons donc ajouté une dépendance vers la bibliothèque time. Maintenant dans votre fichier principal (celui que vous avez indiqué à Cargo), ajoutez :
+```markdown 
+extern crate time;
+```
+
+Pour appeler une fonction depuis la bibliothèque, il suffit de faire :
+
+```markdown 
+println!("{:?}", time::now());
+```
+
+Et c'est tout ! Les imports fonctionnent de la même façon :
+
+```markdown
+use time::Tm;
+```
