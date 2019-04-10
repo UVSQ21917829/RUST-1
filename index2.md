@@ -126,19 +126,18 @@ html_root_url = "http://static.rust-lang.org/doc/master")];
 
 Un espace de travail valide contient les dossiers suivants :
 
-```markdown 
+
    
   src/, qui contient un dossier par paquet (ex : src/foo/main.rs) ;
   
-    lib/, rustpkg install va y installer les bibliothèques nécessaires dans un sous-dossier 
+   lib/, rustpkg install va y installer les bibliothèques nécessaires dans un sous-dossier 
     (ex : si libbar est nécessaire à foo,alors elle sera installée à lib/x86_64-apple-darwin/libbar-[hash].dylib) ;
     
-    bin/, pour les exécutables (ex : bin/foo) ;
+   bin/, pour les exécutables (ex : bin/foo) ;
     
-    build/, rustpkg build va y stocker les fichiers temporaires de compilation (ex : build/x86_64-apple-darwin/foo/main.o).
+   build/, rustpkg build va y stocker les fichiers temporaires de compilation (ex : build/x86_64-apple-darwin/foo/main.o).
 
 
-```
 L’ID d’un paquet prend la forme d’une URL (par exemple, github.com/mozilla/rust si c’est un dépôt distant ou /foo/bar/ si c’est un dépôt local). Une version peut être précisée :
 
    Un tag (ex : github.com/mozilla/rust#0.3). Dans ce cas, rustpkg va vérifier que le dépôt contient bien un tag nommé 0.3 ;
