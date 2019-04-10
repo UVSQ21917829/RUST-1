@@ -28,8 +28,9 @@ Après avoir créer votre fichier.rs sur sublime text ou autre avec le compilate
 Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir télécharger le compilateur de Rust disponible [ici](https://www.rust-lang.org/), puis l'installer.
 
 ## Tests Unitaires
-  Pour faire une test unitaire en rust il suffit d'ajouter #[test] sur la ligne avant la fonction de test,la fonction ne doit prendre aucun argument en paramétre et ne rien renvoyer.
+  Pour faire des tests unitaires en rust il suffit d'ajouter #[test] sur la ligne avant la fonction de test,la fonction ne doit prendre aucun argument en paramétre et ne rien renvoyer.
   Les fonctions check, fail, assert (ainsi que assert_eq, assert_approx_eq, etc) sont très utiles pour les tests unitaires.
+  
   ### Exemple :
   
   ```markdown
@@ -43,6 +44,7 @@ fn test_somme() {
   ```
   
   Si on souhaite que la fonction échoue, il faut mettre en plus #[should_fail].
+  
   ### Exemple :
   ```markdown
   #[test]
@@ -63,3 +65,59 @@ fn test_trucmuche(b: &mut extra::test::BenchHarness) { // on va utiliser l’arg
     }
 }
 ```
+
+## rustdoc
+
+  **rustdoc** est un outil livré avec Rust qui permet de générer de la documentation à partir des commentaires du code.
+
+Pour qu’un commentaire soit considéré comme de la documentation, il faut utiliser une syntaxe spéciale :
+```markdown 
+ /// Ceci est un commentaire de documentation mono-ligne
+/**
+ * Ceci est un commentaire de documentation
+ * sur plusieurs lignes
+ */
+ 
+```
+La syntaxe utilisée pour la mise en forme est le Markdown (comme sur Linuxfr), et la version HTML est générée avec Pandoc.
+
+Il y a quelques règles cependant :
+
+    La première phrase d’un commentaire sera prise comme résumé de la suite du commentaire
+    Seuls les titres indiqués avec un seul # (et non plusieurs # ou plusieurs = en dessous du texte) sont interprétés par rustdoc. Cette règle sera assouplie dans le futur.
+
+Il y a également quelques conventions :
+
+La première phrase doit décrire succinctement ce que l’élément fait. Si ça n’est pas suffisant, la suite devra décrire quoi et pourquoi l’élément fait ce qu’il fait, les entrées-sorties, et mentionner sous quelles conditions le code va échouer.
+
+On doit utiliser des titres standards quand le texte devient long : « Arguments », « Return value » (valeur renvoyée), « Failure » (échec), « Example », « Safety notes » (notes sur la sûreté), et « Performance notes » (notes sur la performance). Les arguments doivent être écrit de la façon suivante :
+```markdown 
+# Arguments
+
+* `arg1` - pour faire tel truc
+* `arg2` - pour connaitre telle chose
+
+```
+
+
+Les autres façons d’écrire du code en Markdown ne fonctionnent pas () ou sont ambigües (quatre espaces devant le code) et peuvent donc ne pas fonctionner.
+
+Pour générer la documentation, rien de plus simple : il suffit d’ajouter #[link(name = "Nom de votre projet")] en en-tête de votre fichier main.rs (ou le fichier principal de votre projet) et d’utiliser la commande rustdoc main.rs. Cela vous donnera une documentation au format HTML.
+
+Mais on peut fournir bien plus d’informations… Je vous laisse jeter un coup d’œil à la configuration utilisée dans la bibliothèque standard de Rust :
+```markdown 
+#[link(name = "std",
+vers = "0.9-pre",
+uuid = "c70c24a7-5551-4f73-8e37-380b11d80be8",
+url = "https://github.com/mozilla/rust/tree/master/src/libstd")];
+
+#[comment = "The Rust standard library"];
+#[license = "MIT/ASL2"];
+#[crate_type = "lib"];
+
+#[doc(html_logo_url = "http://www.rust-lang.org/logos/rust-logo-128x128-blk.png",
+html_favicon_url = "http://www.rust-lang.org/favicon.ico",
+html_root_url = "http://static.rust-lang.org/doc/master")];
+
+```
+
