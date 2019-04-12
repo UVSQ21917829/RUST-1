@@ -112,8 +112,10 @@ Deuxièmement, les méthodes implicites sur les types primitifs sont documentée
 **debug_assert_ne**    Affirme que deux expressions ne sont pas égales.
 ``` 
 
+
  
 ### Le prélude en Rust
+
 Le prélude est la liste des éléments que Rust importé automatiquement dans chaque programme Rust. Elle est aussi petite que possible et se concentre sur des éléments, en particulier des traits, qui sont utilisés dans presque tous les programmes Rust.
 
 Sur le plan technique, les inserts Rust
@@ -132,7 +134,10 @@ Sur le plan technique, les inserts Rust
   
   
   ## Les types de la bibliothèque standard
+  
+  
   ### Les vecteurs 
+  
   Les vecteurs sont des tableaux redimensionnables. Tout comme les slices, leur taille n'est pas connue à la compilation mais ils peuvent être agrandis ou tronqués au cours de l'exécution. Un vecteur est représenté par trois (3) mots : un pointeur sur la ressource, sa taille et sa capacité. La capacité indique la quantité de mémoire réservée au vecteur. La taille peut augmenter à volonté, tant qu'elle est inférieure à la capacité. Lorsqu'il est nécessaire de franchir cette limite, le vecteur est réalloué avec une capacité plus importante
   
   ```markdown
@@ -213,6 +218,7 @@ fn main() {
 }
    ```
    ### thread
+   
    Un programme Rust en cours d’exécution consiste en un ensemble de threads de système d’exploitation natifs, chacun avec sa propre pile et son propre état. Les threads peuvent être nommés et fournissent une prise en charge intégrée pour la synchronisation de bas niveau.
    ```markdown
    use std::thread;
@@ -222,7 +228,10 @@ thread::spawn(move || {
 });
 ```
 
+
+
    ### dbg
+   
    une macro pour le débogage rapide et sale avec lequel vous pouvez inspecter la valeur d'une expression donnée. Un exemple:
     ```markdown
    let a = 2;
@@ -231,7 +240,10 @@ let b = dbg!(a * 2) + 1;
 assert_eq!(b, 5);
     ```
    
+   
+   
    ### panic!
+   
    Prise en charge de la panique dans la bibliothèque standard.
    **implementation** :Si le thread principal panique, il mettra fin à tous vos threads et à votre programme avec du code 101.
    ```markdown
