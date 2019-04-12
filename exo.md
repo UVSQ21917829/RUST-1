@@ -7,7 +7,7 @@
 
 ### Correction :
    
-  ### méthode 1:
+### méthode 1:
   
     
  ```markdown
@@ -46,7 +46,7 @@
    écrire un programme rust qui calcul 10 puissance 5 en utilisant la boucle while et indique à l'écran le résultat
    
    
-  ### Correction :
+ ### Correction :
    
    
   ```markdown
@@ -70,7 +70,7 @@
  
   écrire un programme rust en utilisant **match** qui indique si un nombre donné est paire ou impaire 
  
-  ## Correction :
+## Correction :
   
   ```markdown
   
@@ -92,7 +92,7 @@
 
 ### Exercice 4 :
 
-  écrire un programme rsut qui affiche les éliments d'un tableau 
+  écrire un programme rsut qui affiche les éléments d'un tableau 
   
 ### Corrction :
 
@@ -110,7 +110,7 @@ fn main() {
 
 ### Exercice 5 :
 
-  écrire un programme rust qui calcul les éliments d'un tableau  
+  écrire un programme rust qui calcul les éléments d'un tableau  
 
 ### Corrction :
 
