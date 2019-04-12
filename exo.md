@@ -46,7 +46,7 @@
    ### méthode :
    
     ```markdown
-       fn main() {
+   fn main() {
   let mut x :i32=10;
   let y :i32 =5;
   let mut i :i32 =1;
