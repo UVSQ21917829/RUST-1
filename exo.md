@@ -45,7 +45,7 @@
    
    ### méthode :
    
-    ```markdown
+  ```markdown
    fn main() {
   let mut x :i32=10;
   let y :i32 =5;
@@ -58,5 +58,6 @@
    println!("{}",x);
  
 }
-    ```
+
+ ```
   
