@@ -7,7 +7,8 @@
 
 ### Correction :
    
-   ### méthode 1:
+  ### méthode 1:
+  
     
  ```markdown
     
@@ -39,10 +40,11 @@
              println!("{}",n);
              }
 ```
-  ### Exercice 2:
+ ### Exercice 2:
+  
    écrire un programme rust qui calcul 10 puissance 5 en utilisant la boucle while et indique à l'écran le résultat
    
-   ### méthode :
+  ### Correction :
    
   ```markdown
    fn main() {
