@@ -1,7 +1,7 @@
 ## Exercices D'apprenstissage :
 
 ### Exercice 1 :
-   écrire en deux méthode le programme qui calcule la factorielle de 45r et indique à l'écran le résultat.
+   écrire en deux méthode le programme qui calcule la factorielle de 10 et indique à l'écran le résultat.
      
 
 
@@ -12,13 +12,13 @@
  ```markdown
     
    fn main() {
-   let mut n :i32 =5;
+   let mut n :i32 =10;
    let mut i :i32 =1;
   
    loop {
       n=n*i;
       i=i+1;
-      if i==5{
+      if i==10{
           break;
        }
     }
