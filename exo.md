@@ -9,13 +9,12 @@
    
    ### méthode 1:
     
-    ```markdown
+ ```markdown
     
    fn main() {
    let mut n :i32 =5;
    let mut i :i32 =1;
-    
-    
+  
    loop {
       n=n*i;
       i=i+1;
@@ -26,5 +25,5 @@
     println!("{:?}",n);
     
 }
-    ```
+```
      
