@@ -40,13 +40,17 @@
              println!("{}",n);
              }
 ```
+
  ### Exercice 2:
   
    écrire un programme rust qui calcul 10 puissance 5 en utilisant la boucle while et indique à l'écran le résultat
    
+   
   ### Correction :
    
+   
   ```markdown
+  
    fn main() {
              let mut x :i32=10;
              let y :i32 =5;
@@ -60,4 +64,29 @@
                }
 
  ```
+ 
+## Exercice 3 :
+ 
+ 
+  écrire un programme rust en utilisant **match** qui indique si un nombre donné est paire ou impaire 
+ 
+  ## Correction :
+  
+  ```markdown
+  
+ fn main() {
+           let x : i32 = 17;
+           let y=x%2;
+           match y {
+                   0 => {
+                        println!("paire !");
+                        }
+                   _ => {
+                         println!("impaire !");
+                    }
+                   }
+ 
+           }
+  
+  ```
   
