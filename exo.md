@@ -14,7 +14,6 @@
    fn main() {
    let mut n :i32 =10;
    let mut i :i32 =1;
-  
    loop {
       n=n*i;
       i=i+1;
@@ -22,7 +21,7 @@
           break;
        }
     }
-    println!("{:?}",n);
+    println!("{}",n);
     
 }
 ```
