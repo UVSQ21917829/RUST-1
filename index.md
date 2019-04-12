@@ -47,7 +47,121 @@ let i : i32 = 0;
 // ou :
 let i = 0i32;
 ```
-Donc pour résumer, voici une petite liste des différents types de base disponibles : i8 (un entier signé de 8 bits),i16,i32,i64,u18(un entier non signé de 8bits),u16,u32,u64,f32(un flottant de 32bite),f64,String…
+### Bool
+
+Un booléen standard. Peut être vrai ou faux
+
+```markdown
+let t = true;
+let f = false;
+```
+### Char
+Un caractère de 4 octets.
+
+```markdown
+let a = 'a';
+let b = 'b';
+let keyboard = '⌨';
+```
+
+### tableau
+Un tableau est une taille fixe, une collection d'éléments de même type.
+
+Il est déclaré comme:
+```markdown
+let name: [type; size] = [v1, v2, v3, v4];
+```
+
+```markdown
+let array: [i32; 5] = [0, 1, 2, 3, 4];
+
+println!("le premier element est: {}", array[0]);
+
+let mut compteur = 0;
+for x in array.iter(){
+    println!("l'element a l'index {} est {}", compteur, x);
+    compteur += 1;
+}
+```
+### Slices
+
+Une tranche est une taille dynamique, "tranche" dans une collection d'éléments.
+
+Par exemple, si nous voulions prendre les 3 premiers éléments de notre tableau, cela ressemblerait à ceci:
+
+```markdown
+let array: [i32; 5] = [0, 1, 2, 3, 4];
+
+let t = &array[0..3]; 
+
+for x in t {
+	println!("x est {}", x):
+}
+```
+le **&** fait référence à la mémoire réelle de ce qu'un tableau "pointe" sur.
+
+### Str
+ 
+ Str est une "tranche de chaîne" et constitue le type de chaîne le plus primitif.
+
+```markdown
+let str = "Bonjour je suis une chaine de caractere ";
+
+println!("la valeur de notre variable est : {}", str);
+
+```
+
+
+### tuple
+
+Les tuples sont des séquences finies. Tout d'abord ils sont fini, ils ont une taille, un nombre fixe d'éléments. Ils peuvent contenir plusieurs types différents. Cela contraste avec un tableau, qui ne peut contenir que des éléments du même type. Enfin, il s’agit de séquences, ce qui signifie qu’elles ont un ordre, et surtout qu’on peut y accéder par index (bien que de manière différente de celle des tableaux).
+
+```markdown
+let tuple = ("Bonjour", 42, "Monde", [3,6,9]);
+
+println!("premier element  est {}", tuple.0);
+println!("deuxieme element est  {}", tuple.1);
+println!("troisieme element est {}", tuple.2);
+let mut compteur = 0;
+for x in &tuple.3 {
+    println!("Element {} du quatriere element est {}", compteur, x);
+    compteur += 1;
+}
+```
+### Reference
+
+
+Il y a un deuxième type de référence: &mut T. Une "référence mutable" vous permet de muter la ressource que vous empruntez. Par exemple:
+```markdown
+let  mut  x  =  5 ; 
+{ let y = & mut x ;
+    * y + = 1 ; 
+} println ! ( "{}" , x );
+```
+Cela va afficher 6. Nous faisons y référence à x.
+
+En Gros on a : une ou plusieurs références ( &T) à une ressource et exactement une référence mutable ( &mut T).
+
+### Struct
+
+Un struct type est un produit hétérogène d'autres types, appelés champs du type.
+Structs sont un moyen de créer des types de données plus complexes. Par exemple, si nous faisions des calculs impliquant des coordonnées dans un espace 2D, x et y.Cela nous permet de combiner ces deux en un seul type de données unifié avec x et y comme étiquettes de champ:
+
+```markdown
+struct  Point {
+     x : i32 ,
+     y : i32 ,
+}
+
+fn  main () {
+     let  origine  =  Point { x : 0 , y : 0 }; 
+
+    println! ( "L'origine est à ({}, {})" , origine . X , origine . Y );
+}
+```
+
+Donc pour résumer, voici une petite liste des différents types de base disponibles : i8 (un entier signé de 8 bits),i16,i32,i64,u18(un entier non signé de 8bits),u16,u32,u64,f32(un flottant de 32bits),f64,St, reference, tuple, tableau, slice, struct.
+
 
 ## Incrémentation : 
 pour incrémenter il faudra utiliser la syntaxe : 
@@ -205,6 +319,37 @@ fn addition(nb1: i32, nb2: i32) -> i32 {
 
 Ce programme affiche 1 + 2 =3
 
+## Gestion de la mémoire:
+
+ Rust propose une nouvelle façon de gérer la mémoire, qui se veut sûre et garantie à la compilation, ce qui permet d’en limiter l’impact sur les performances à l’exécution. Autant vous prévenir tout de suite : la courbe d’apprentissage de Rust est donc plus lente que dans d’autres langages mais largement compensée en qualité et fiabilité des programmes produits. Concrètement, vous allez transpirer au début mais serez fiers de la qualité de vos productions.
+ 
+ **Ownership** : Rust contrôle la gestion de la mémoire à travers des règles strictes,lorsqu'un cadre de pile est quitté, ses allocations locales sont toutes libérées et ses références aux zones sont supprimées.
+
+ Rust est muni d'un système « d'appartenance » qui permet d'écarter les conflits les plus communs lorsqu'une ressource est utilisée à plusieurs endroits.
+Bien que ce dernier soit très pratique, il demande d'avoir une certaine rigueur quant à la déclaration de nos ressources, sans quoi vous risqueriez de vous attirer les foudres du compilateur.
+Rust possède une syntaxe rigide et un typage fort permettant de s’assurer qu’il n’y ait aucune fuite mémoire après compilation. Au moment de la compilation, le code est analysé de manière à ce que le langage indique directement les problèmes rencontrés dans la gestion de la mémoire. Le compilateur de Rust contraint ainsi le programmeur à corriger ses erreurs avant toute exécution du programme. Il est donc impossible d’avoir un dépassement de mémoire tampon.
+
+
+## smart pointers
+Dans Rust, les pointeurs intelligents ne sont pas seulement des pointeurs, mais également une structure de données. Ils sont également disponibles dans de nombreuses autres langues, mais leur origine est en c ++. Les pointeurs intelligents sont généralement implémentés via des structures.
+Le motif de pointeur intelligent est un motif de conception général utilisé fréquemment dans Rust . De nombreuses bibliothèques ont leurs propres pointeurs intelligents et vous pouvez même écrire les vôtres. Nous allons couvrir les pointeurs intelligents les plus courants dans la bibliothèque standard:
+
+•Box<T> pour allouer des valeurs sur le tas.
+	
+•Rc<T>, un type de comptage de référence qui permet la propriété multiple.
+	
+•Ref<T>et RefMut<T>, accessible via RefCell<T>, un type qui applique les règles d'emprunt au moment de l'exécution au lieu du moment de la compilation
+
+
+Voici la syntaxe d'utilisation Box<T>
+	
+	
+```markdown
+	fn main() {
+    let b = Box::new(5);
+    println!("b = {}", b);
+}
+```
 
  Et pour plus de documentations veuillez consulter ces **liens suivants**	:
    
@@ -214,8 +359,8 @@ Ce programme affiche 1 + 2 =3
    
    •le [**rustbook**](https://doc.rust-lang.org/stable/book/)
    
-   en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémoire 
-   plus sure ,un point qu'on ne lui disputera pas 
+   En conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémoire 
+   plus sure ,un point qu'on ne lui disputera pas .
     
 
  
