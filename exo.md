@@ -106,4 +106,26 @@ fn main() {
           println!("{:?}",s);
           }
 
+``` 
+
+### Exercice 5 :
+
+  écrire un programme rust qui calcul les éliments d'un tableau  
+
+### Corrction :
+
+```markdown
+
+fn main() {
+          let  v = [0 ,1 ,2];
+          let mut i=0;
+          let mut somme =0;
+          let s = &v;
+          while i<3{
+                   somme=somme+s[i];
+                   i=i+1;
+                   }
+                   println!("{:?}",somme);
+          }
+
 ```
