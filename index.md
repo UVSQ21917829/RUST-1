@@ -359,8 +359,8 @@ Voici la syntaxe d'utilisation Box<T>
    
    •le [**rustbook**](https://doc.rust-lang.org/stable/book/)
    
-   en conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémoire 
-   plus sure ,un point qu'on ne lui disputera pas 
+   En conclusion **Rust** à été concu comme langage systéme pour remplacer **C++** avec une gestion de la mémoire 
+   plus sure ,un point qu'on ne lui disputera pas .
     
 
  
