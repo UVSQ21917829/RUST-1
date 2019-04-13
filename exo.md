@@ -167,6 +167,6 @@ fn pgcd(mut x :i32,mut y:i32)->i32{
             println!("{}",pgcd(47,7));
             println!("{}",pgcd(107,96));
             
-  }
+            }
 
 ```
