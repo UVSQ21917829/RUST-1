@@ -170,3 +170,34 @@ fn pgcd(mut x :i32,mut y:i32)->i32{
             }
 
 ```
+### Exercice 7 :
+
+ Ecrire une fonction qui cacul la devision entre deux fonction , cette fonction doit être associée à des tests unitaires
+
+### Corrction : 
+
+```markdown
+pub fn div(a: u32, b: u32) -> u32 {
+          if b == 0 {
+                    panic!("Division sur zero !");
+                    } 
+          a / b
+                                  }
+
+#[cfg(test)]
+mod tests {
+         use super::*;
+         #[test]
+         fn test_div() {
+                       assert_eq!(div(10, 2),5);
+                       }
+
+         #[test]
+         #[should_panic]
+         fn test_div_sur_zero() {
+                                div(1, 0);
+                                }
+
+          }
+
+```
