@@ -1,7 +1,7 @@
-## Exercices D'apprenstissage :
+## Exercices D'apprentissage :
 
 ### Exercice 1 :
-   écrire en deux méthode le programme qui calcule la factorielle de 10 et indique à l'écran le résultat.
+   Ecrire en deux méthode le programme qui calcule la factorielle de 10 et indique à l'écran le résultat.
      
 
 
@@ -41,12 +41,15 @@
              }
 ```
 
- ### Exercice 2:
+
+
+ ## Exercice 2:
   
-   écrire un programme rust qui calcul 10 puissance 5 en utilisant la boucle while et indique à l'écran le résultat
+   Ecrire un programme rust qui calcul 10 puissance 5 en utilisant la boucle while et indique à l'écran le résultat.
    
    
  ### Correction :
+   
    
    
   ```markdown
@@ -68,7 +71,7 @@
 ## Exercice 3 :
  
  
-  écrire un programme rust en utilisant **match** qui indique si un nombre donné est paire ou impaire 
+  Ecrire un programme rust en utilisant **match** qui indique si un nombre donné est paire ou impaire 
  
 ## Correction :
   
@@ -92,9 +95,9 @@
 
 ### Exercice 4 :
 
-  écrire un programme rsut qui affiche les éléments d'un tableau 
+  Ecrire un programme RUST qui rempli et affiche les éléments d'un tableau 
   
-### Corrction :
+### Correction :
 
 ```markdown
 fn main() {
@@ -110,7 +113,7 @@ fn main() {
 
 ### Exercice 5 :
 
-  écrire un programme rust qui calcul les éléments d'un tableau  
+  Ecrire un programme rust qui calcul la somme des éléments d'un tableau  
 
 ### Corrction :
 
@@ -133,10 +136,10 @@ fn main() {
 ### Exercice 6 :
 
 Ecrire un programme avec la fonction pgcd qui calcul le pgcd
- des deux fonctions. La méthode main doit tester cette
+ des deux entiers. La méthode main doit tester cette
 fonction sur plusieurs exemples. 
 
-### Corrction : 
+### Correction : 
 
 ```markdown
 
@@ -172,7 +175,7 @@ fn pgcd(mut x :i32,mut y:i32)->i32{
 ```
 ### Exercice 7 :
 
- Ecrire une fonction qui cacul la devision entre deux fonction , cette fonction doit être associée à des tests unitaires
+ Ecrire une fonction qui cacul la devision entre deux entiers , cette fonction doit être associée à des tests unitaires
 
 ### Corrction : 
 
