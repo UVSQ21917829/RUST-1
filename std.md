@@ -220,7 +220,7 @@ fn main() {
    ```
    
    
-     ### thread
+   ### thread
    
    Un programme Rust en cours d’exécution consiste en un ensemble de threads de système d’exploitation natifs, chacun avec sa propre pile et son propre état. Les threads peuvent être nommés et fournissent une prise en charge intégrée pour la synchronisation de bas niveau.
    ```markdown
