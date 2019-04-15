@@ -129,15 +129,16 @@ Sur le plan technique, les inserts Rust
   ```markdown
  use std::prelude::v1::*;
   ```
-  
   dans chaque module.
+  
+  
+  
+  
   
   
   ## Les types de la bibliothèque standard
   
-  
-  ### Les vecteurs 
-  
+   ### Les vecteurs
   Les vecteurs sont des tableaux redimensionnables. Tout comme les slices, leur taille n'est pas connue à la compilation mais ils peuvent être agrandis ou tronqués au cours de l'exécution. Un vecteur est représenté par trois (3) mots : un pointeur sur la ressource, sa taille et sa capacité. La capacité indique la quantité de mémoire réservée au vecteur. La taille peut augmenter à volonté, tant qu'elle est inférieure à la capacité. Lorsqu'il est nécessaire de franchir cette limite, le vecteur est réalloué avec une capacité plus importante
   
   ```markdown
@@ -217,6 +218,8 @@ fn main() {
     // use the values stored in map
 }
    ```
+   
+   
    ### thread
    
    Un programme Rust en cours d’exécution consiste en un ensemble de threads de système d’exploitation natifs, chacun avec sa propre pile et son propre état. Les threads peuvent être nommés et fournissent une prise en charge intégrée pour la synchronisation de bas niveau.
@@ -230,7 +233,7 @@ thread::spawn(move || {
 
 
 
-   ### dbg
+### dbg
    
    une macro pour le débogage rapide et sale avec lequel vous pouvez inspecter la valeur d'une expression donnée. Un exemple:
     ```markdown
@@ -241,8 +244,7 @@ assert_eq!(b, 5);
     ```
    
    
-   
-   ### panic!
+### panic!
    
    Prise en charge de la panique dans la bibliothèque standard.
    **implementation** :Si le thread principal panique, il mettra fin à tous vos threads et à votre programme avec du code 101.
@@ -339,7 +341,9 @@ assert_eq!(extension, Some(OsStr::new("txt")));
 
 **struct**    	Le mot-clé utilisé pour définir les structures.
 
+
 ### Les extensions de syntaxe
+
 
 La bibliothèque standard inclut plusieurs extensions de syntaxe. println! est un équivalent au printf de C :
 ```markdown
@@ -349,6 +353,7 @@ println!("la reponse est {v}.", rep);
 ```
 
 Il existe par exemple l’extension asm!, qui permet au développeur d’intégrer du code assembleur en ligne, comme le fait le C via le mot-clé dédié __asm__.
+
 ```markdown
 #[cfg(target_os = "linux")]
 fn helloworld() {
@@ -365,6 +370,8 @@ fn main() {
 }
 ```
 Les extensions **error!**, **warn!**, **info!** et **debug!** permettent d’ajouter des traces de log, activables et désactivables via une variable d’environnement.
+
+
 ### Utilisation de Rust sans la bibliothèque standard
 
 La bibliothèque standard de Rust fournit de nombreuses fonctionnalités utiles, mais suppose la prise en charge de diverses fonctionnalités de son système hôte: threads, mise en réseau, allocation de segment de mémoire, etc. Cependant, certains systèmes ne possèdent pas ces fonctionnalités et Rust peut également les utiliser! Pour ce faire, nous disons que la rouille nous ne voulons pas utiliser la bibliothèque standard via un attribut: #![no_std].
