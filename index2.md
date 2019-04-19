@@ -31,16 +31,17 @@ Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir t
   Pour faire des tests unitaires en rust il suffit d'ajouter #[test] sur la ligne avant la fonction de test,la fonction ne doit prendre aucun argument en paramétre et ne rien renvoyer.
   Les fonctions check, fail, assert (ainsi que assert_eq, assert_approx_eq, etc) sont très utiles pour les tests unitaires.
   
-  ### Exemple :
-  
+ 
+ ### Exemple
+ 
   ```markdown
   fn somme(x: i32,y :i32)->i32{
-      x+y
-  }
+                              x+y
+                              }
   #[test]
-fn test_somme() {
-    assert_eq!(3,somme(1,2));
-}
+  fn test_somme() {
+                  assert_eq!(3,somme(1,2));
+                  }
   ```
   
   Si on souhaite que la fonction échoue, il faut mettre en plus #[should_fail].
@@ -49,9 +50,9 @@ fn test_somme() {
   ```markdown
   #[test]
   #[should_fail]
-fn test_l’échec() {
-    assert_eq!(4,somme(1,2));
-}
+  fn test_l’échec() {
+                    assert_eq!(4,somme(1,2));
+                    }
   ```
   Il existe un type de tests unitaires un peu spécial : les benchmarks (tests de performances). Il faut utiliser l’attribut #[bench] mais aussi un peu plus que ça
   
@@ -62,8 +63,8 @@ fn test_trucmuche(b: &mut extra::test::BenchHarness) { // on va utiliser l’arg
     // le code de préparation
     do b.iter() {
         // le code dont vous souhaitez mesurer les performances
-    }
-}
+                }
+                                                     }
 ```
 
 ## rustdoc
