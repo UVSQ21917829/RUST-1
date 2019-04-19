@@ -1,7 +1,7 @@
 [**Base du langage**](https://uvsq21807686.github.io/RUST)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)  
 
 
-## Outils de développement 
+## Outils de développemen
 
 Pour pouvoir développer sur Rust , il va falloir utiliser le bon outils , pour programmer sur RUST vous pouvez utiliser leur éditeur de code [**play.rust-lang.org**](https://play.rust-lang.org/)
 
