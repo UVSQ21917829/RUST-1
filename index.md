@@ -21,7 +21,9 @@ Nous avons crée un simple programme qui affiche le message (bonjour tout le mon
 ### Déclaration des variables
  En rust les variables sont toutes constantes par défaut de déclaration.
  
- ## Un exemple :
+ 
+   ### Un exemple :
+   
  ```markdown
 let i = 1;
 
