@@ -1,3 +1,5 @@
+[**Base du langage**](https://uvsq21807686.github.io/RUST/)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)
+
 ## Correction des exercices :
 
 ### Exercice 1 :
@@ -35,9 +37,7 @@
              println!("{}",n);
              }
 ```
-
- ### Exercice 2:
- 
+### Exercice 2: 
   
   ```markdown
   
@@ -75,7 +75,8 @@
   
   ```
   
-  ### Exercice 4 :
+ ### Exercice 4 :
+
 
 ```markdown
 fn main() {
@@ -88,7 +89,7 @@ fn main() {
           }
 
 ``` 
- ### Exercice 5 :
+### Exercice 5 :
 
 ```markdown
 
