@@ -1,3 +1,5 @@
+
+
 ## Correction des exercices :
 
 ### Exercice 1 :
@@ -36,8 +38,7 @@
              }
 ```
 
- ### Exercice 2:
- 
+### Exercice 2: 
   
   ```markdown
   
@@ -75,7 +76,9 @@
   
   ```
   
-  ### Exercice 4 :
+  
+### Exercice 4 :
+
 
 ```markdown
 fn main() {
@@ -88,7 +91,9 @@ fn main() {
           }
 
 ``` 
- ### Exercice 5 :
+
+
+### Exercice 5 :
 
 ```markdown
 
