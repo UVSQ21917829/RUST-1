@@ -153,10 +153,7 @@ let v = vec![0; 10]; // ten zeroes
   
  ```
   
- 
- 
- 
- ### L’énumération Option
+### L’énumération Option
  
  Le type Option représente une valeur facultative: every Option est soit Someet contient une valeur, soit None, et ne contient pas. Optionles types sont très courants dans Rust code
  
@@ -184,8 +181,7 @@ enum  Résultat < T , E > {
     Err ( E ),
 } 
 ```
- 
- ### Lire et écrire:
+### Lire et écrire:
   
   Parce qu'ils sont des traits Readet Write sont implémentés par un certain nombre d'autres types, vous pouvez également les implémenter pour vos types. En tant que tel, vous verrez quelques types d’E / S différents dans la documentation de ce module: Files, TcpStreams et parfois même Vec<T>s. Par exemple, Read ajoute une read méthode, que nous pouvons utiliser sur Files:
  
