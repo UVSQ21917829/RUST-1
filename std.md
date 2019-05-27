@@ -133,15 +133,14 @@ Sur le plan technique, les inserts Rust
   
   ```markdown
  use std::prelude::v1::*;
+  
   ```
+  ## Les types de la bibliothèque standard
+
+### Les vecteurs
+
+
   
-  
-  
- 
- 
- ## Les types de la bibliothèque standard
-  
-   ### Les vecteurs
    
   Les vecteurs sont des tableaux redimensionnables. Tout comme les slices, leur taille n'est pas connue à la compilation mais ils peuvent être agrandis ou tronqués au cours de l'exécution. Un vecteur est représenté par trois (3) mots : un pointeur sur la ressource, sa taille et sa capacité. La capacité indique la quantité de mémoire réservée au vecteur. La taille peut augmenter à volonté, tant qu'elle est inférieure à la capacité. Lorsqu'il est nécessaire de franchir cette limite, le vecteur est réalloué avec une capacité plus importante
   
@@ -154,7 +153,10 @@ let v = vec![0; 10]; // ten zeroes
   
  ```
   
- ### L'énumération Option
+ 
+ 
+ 
+ ### L’énumération Option
  
  Le type Option représente une valeur facultative: every Option est soit Someet contient une valeur, soit None, et ne contient pas. Optionles types sont très courants dans Rust code
  
@@ -181,9 +183,9 @@ enum  Résultat < T , E > {
     Ok ( T ),
     Err ( E ),
 } 
-
-  ```
-  ### Lire et écrire:
+```
+ 
+ ### Lire et écrire:
   
   Parce qu'ils sont des traits Readet Write sont implémentés par un certain nombre d'autres types, vous pouvez également les implémenter pour vos types. En tant que tel, vous verrez quelques types d’E / S différents dans la documentation de ce module: Files, TcpStreams et parfois même Vec<T>s. Par exemple, Read ajoute une read méthode, que nous pouvons utiliser sur Files:
  
@@ -225,7 +227,10 @@ fn main() {
           }
    ```
    
-   ### thread
+
+### thread
+
+
    
    Un programme Rust en cours d’exécution consiste en un ensemble de threads de système d’exploitation natifs, chacun avec sa propre pile et son propre état. Les threads peuvent être nommés et fournissent une prise en charge intégrée pour la synchronisation de bas niveau.
    
@@ -305,7 +310,9 @@ let five_seconds = Duration::new(5, 0);
 // les deux déclarations sont équivalentes
 assert_eq!(Duration::new(5, 0), Duration::from_secs(5));
   ```
-  ### path
+  
+### path
+
   
   Manipulation de chemins multi-plateformes.
 Ce module fournit deux types, PathBufet Path(apparenté à String et str), pour travailler avec des chemins abstraits. Ces types sont des wrappers minces autour OsString et OsStrrespectivement, ce qui signifie qu'ils travaillent directement sur les chaînes en fonction de la syntaxe de chemin de la plateforme locale.
