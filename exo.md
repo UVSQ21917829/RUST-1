@@ -49,6 +49,6 @@ fonction sur plusieurs exemples.
 Ecrire un programme qui crée un nouveau fichier et y écrit des octets
 
 
- Pour consulter cliquer sur ce lien : [**la correction**](https://uvsq21807686.github.io/RUST/correction),
+ Pour consulter cliquer sur ce lien : [**la correction**](https://uvsq21807686.github.io/RUST/corrrection),
 
 
