@@ -8,8 +8,7 @@
 
  Rust est un langage de programmation système moderne mettant l'accent sur la sécurité, la vélocité et la concurrence, compilé et multi paradigme. C'est un croisement entre langage impératif (C), objet (C++), fonctionnel (Ocaml) et concurrent (Erlang). Le développement du langage RUST a commencé depuis 2009 par la fondation Mozila et aussi avec l’aide de la communauté des développeurs Rust qui sont très présent sur Github.
 
-
-  ### Premier programme :
+### Premier programme :
 
 ```markdown
 fn main() {
@@ -23,8 +22,7 @@ Nous avons crée un simple programme qui affiche le message (bonjour tout le mon
  En rust les variables sont toutes constantes par défaut de déclaration.
  
  
- 
- ### Un exemple :  
+### Exemple :  
  ```markdown
 let i = 1;
 
@@ -33,7 +31,7 @@ i = 2; // ceci n’est pas valide  !
 
 si on souhaite déclarer une variable mutable (modifiable) il faut utiliser le mot clé **mut** 
 
-## Un exemple :
+## Exemple :
 
  ```markdown
 let mut i = 1;
