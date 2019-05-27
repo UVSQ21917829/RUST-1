@@ -1,15 +1,13 @@
-## Exercices D'apprentissage :
+[**Base du langage**](https://uvsq21807686.github.io/RUST/)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc) 
+
+## Exercices d'apprentissage :
 
 
 ### Exercice 1 (Les boucles et conditions) :
    Ecrire en deux méthode le programme qui calcule la factorielle de 10 et indique à l'écran le résultat.
      
 
-   
-
-
-
- ### Exercice 2 (La boucle while) :
+### Exercice 2 (La boucle while) :
   
    Ecrire un programme rust qui calcul 10 puissance 5 en utilisant la boucle while et indique à l'écran le résultat.
    
