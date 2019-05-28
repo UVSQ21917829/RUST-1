@@ -1,7 +1,7 @@
 [**Base du langage**](https://uvsq21807686.github.io/RUST)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)  
 
 
-## Outils de développement 
+## Outils de développemen
 
 Pour pouvoir développer sur Rust , il va falloir utiliser le bon outils , pour programmer sur RUST vous pouvez utiliser leur éditeur de code [**play.rust-lang.org**](https://play.rust-lang.org/)
 
@@ -31,7 +31,8 @@ Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir t
   Pour faire des tests unitaires en rust il suffit d'ajouter #[test] sur la ligne avant la fonction de test,la fonction ne doit prendre aucun argument en paramétre et ne rien renvoyer.
   Les fonctions check, fail, assert (ainsi que assert_eq, assert_approx_eq, etc) sont très utiles pour les tests unitaires.
   
-### Exemple:
+ 
+ ### Exemple
  
   ```markdown
   fn somme(x: i32,y :i32)->i32{
@@ -44,9 +45,8 @@ Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir t
   ```
   
   Si on souhaite que la fonction échoue, il faut mettre en plus #[should_fail].
- 
-### Exemple:
-
+  
+  ### Exemple :
   ```markdown
   #[test]
   #[should_fail]
@@ -56,9 +56,7 @@ Si vous ne souhaitez pas utiliser l'éditeur Rust en ligne, il va vous falloir t
   ```
   Il existe un type de tests unitaires un peu spécial : les benchmarks (tests de performances). Il faut utiliser l’attribut #[bench] mais aussi un peu plus que ça
   
-
-### Exemple:
-
+  ### Exemple :
  ```markdown 
   #[bench]
 fn test_trucmuche(b: &mut extra::test::BenchHarness) { // on va utiliser l’argument

@@ -76,11 +76,12 @@ Bibliothèque de différences de texte Rust avec assertion de différences inté
 let changeset = Changeset::new("test", "tent", "");
 
 assert_eq!(changeset.diffs, vec![
-  Difference::Same("te".to_string()),
-  Difference::Rem("s".to_string()),
-  Difference::Add("n".to_string()),
-  Difference::Same("t".to_string())
-]);
+              Difference::Same("te".to_string()),
+              Difference::Rem("s".to_string()),
+              Difference::Add("n".to_string()),
+              Difference::Same("t".to_string())
+                                 ]
+           );
 ```
 
 ## bitflags

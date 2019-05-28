@@ -39,12 +39,17 @@ Les modules optionet resultdéfinissent des types facultatifs et de traitement d
 La bibliothèque standard expose trois méthodes courantes pour gérer les régions de mémoire contiguës:
 
  •Vec<T>- Un vecteur alloué par tas qui est redimensionnable au moment de l'exécution.
- •[T; n]- Un tableau en ligne avec une taille fixe au moment de la compilation.
+ 
+ •[T; n]- Un tableau en ligne avec une taille fixe au moment de la compilation. 
+ 
  •[T]- Une tranche de taille dynamique dans tout autre type de stockage contigu, affecté ou non au tas.
+
 Les tranches ne peuvent être manipulées que par un type de pointeur , et en tant que telles, elles se déclinent en plusieurs saveurs telles que:
 
 •&[T]- tranche partagée
+
 •&mut [T]- tranche mutable
+
 •Box<[T]>- tranche appartenant
 
 **str**, une tranche de chaîne UTF-8, est un type primitif et la bibliothèque standard en définit de nombreuses méthodes. Rust **strs** sont généralement accessibles comme des références immuables: &str. Utilisez la propriété Stringpour créer et transformer des chaînes.
@@ -128,20 +133,19 @@ Sur le plan technique, les inserts Rust
   
   ```markdown
  use std::prelude::v1::*;
+  
   ```
-  
-  dans chaque module.
-  
-  
   ## Les types de la bibliothèque standard
+
+### Les vecteurs
+
+
   
-  
-  ### Les vecteurs 
-  
+   
   Les vecteurs sont des tableaux redimensionnables. Tout comme les slices, leur taille n'est pas connue à la compilation mais ils peuvent être agrandis ou tronqués au cours de l'exécution. Un vecteur est représenté par trois (3) mots : un pointeur sur la ressource, sa taille et sa capacité. La capacité indique la quantité de mémoire réservée au vecteur. La taille peut augmenter à volonté, tant qu'elle est inférieure à la capacité. Lorsqu'il est nécessaire de franchir cette limite, le vecteur est réalloué avec une capacité plus importante
   
   ```markdown
-  let v: Vec<i32> = vec![];
+let v: Vec<i32> = vec![];
 
 let v = vec![1, 2, 3, 4, 5];
 
@@ -149,7 +153,8 @@ let v = vec![0; 10]; // ten zeroes
   
  ```
   
- ### L'énumération Option
+### L’énumération Option
+ 
  Le type Option représente une valeur facultative: every Option est soit Someet contient une valeur, soit None, et ne contient pas. Optionles types sont très courants dans Rust code
  
   ```markdown
@@ -167,6 +172,7 @@ laissez  unwrapped_msg  =  msg . unwrap_or ( "message par défaut" );
 
 
 ### L'énumération Result
+
 Result<T, E> est le type utilisé pour renvoyer et propager des erreurs. C'est une énumération avec les variantes,, Ok(T)représentant le succès et contenant une valeur, et Err(E) représentant l'erreur et contenant une valeur d'erreur.
 
   ```markdown
@@ -174,9 +180,9 @@ enum  Résultat < T , E > {
     Ok ( T ),
     Err ( E ),
 } 
-
-  ```
-  ### Lire et écrire
+```
+### Lire et écrire:
+  
   Parce qu'ils sont des traits Readet Write sont implémentés par un certain nombre d'autres types, vous pouvez également les implémenter pour vos types. En tant que tel, vous verrez quelques types d’E / S différents dans la documentation de ce module: Files, TcpStreams et parfois même Vec<T>s. Par exemple, Read ajoute une read méthode, que nous pouvons utiliser sur Files:
  
    ```markdown
@@ -207,54 +213,59 @@ Tout comme les vecteurs, les HashMap sont redimensionnables mais peuvent égalem
 Une HashMapliste d'éléments fixes peut être initialisée à partir d'un tableau:
  ```markdown
 use std::collections::HashMap;
-
 fn main() {
-    let timber_resources: HashMap<&str, i32> =
-    [("Norway", 100),
-     ("Denmark", 50),
-     ("Iceland", 10)]
-     .iter().cloned().collect();
-    // use the values stored in map
-}
+          let timber_resources: HashMap<&str, i32> =
+          [("Norway", 100),
+          ("Denmark", 50),
+          ("Iceland", 10)]
+          .iter().cloned().collect();
+          // use the values stored in map
+          }
    ```
-   ### thread
+   
+
+### thread
+
+
    
    Un programme Rust en cours d’exécution consiste en un ensemble de threads de système d’exploitation natifs, chacun avec sa propre pile et son propre état. Les threads peuvent être nommés et fournissent une prise en charge intégrée pour la synchronisation de bas niveau.
+   
    ```markdown
    use std::thread;
 
 thread::spawn(move || {
-    // some work here
-});
+    // des instructions
+                      }
 ```
 
 
 
-   ### dbg
+### dbg
    
    une macro pour le débogage rapide et sale avec lequel vous pouvez inspecter la valeur d'une expression donnée. Un exemple:
-    ```markdown
-   let a = 2;
-let b = dbg!(a * 2) + 1;
-//      ^-- prints: [src/main.rs:2] a * 2 = 4
-assert_eq!(b, 5);
+   
+ ```markdown
+ let a = 2;
+ let b = dbg!(a * 2) + 1;
+   //      ^-- prints: [src/main.rs:2] a * 2 = 4
+ assert_eq!(b, 5);
+ 
     ```
    
    
-   
-   ### panic!
+### panic!
    
    Prise en charge de la panique dans la bibliothèque standard.
    **implementation** :Si le thread principal panique, il mettra fin à tous vos threads et à votre programme avec du code 101.
    ```markdown
    fn division(dividend: i32, divisor: i32) -> i32 {
-    if divisor == 0 {
-        // La division par zéro fait planter le thread courant.
-        panic!("division by zero");
-    } else {
-        dividend / divisor
-    }
-}
+              if divisor == 0 {
+                              // La division par zéro fait planter le thread courant.
+                              panic!("division by zero");
+                              } else {
+                                     dividend / divisor
+                                     }
+                                                    }
 
 ```
 ### ascii
@@ -284,6 +295,7 @@ let  copy  =  s . clone (); // afin que nous puissions le cloner
 ```
 
 ### time
+
 Quantification temporelle:
 
  ```markdown
@@ -294,7 +306,10 @@ let five_seconds = Duration::new(5, 0);
 // les deux déclarations sont équivalentes
 assert_eq!(Duration::new(5, 0), Duration::from_secs(5));
   ```
-  ### path
+  
+### path
+
+  
   Manipulation de chemins multi-plateformes.
 Ce module fournit deux types, PathBufet Path(apparenté à String et str), pour travailler avec des chemins abstraits. Ces types sont des wrappers minces autour OsString et OsStrrespectivement, ce qui signifie qu'ils travaillent directement sur les chaînes en fonction de la syntaxe de chemin de la plateforme locale.
 ```markdown
@@ -339,7 +354,9 @@ assert_eq!(extension, Some(OsStr::new("txt")));
 
 **struct**    	Le mot-clé utilisé pour définir les structures.
 
+
 ### Les extensions de syntaxe
+
 
 La bibliothèque standard inclut plusieurs extensions de syntaxe. println! est un équivalent au printf de C :
 ```markdown
@@ -349,22 +366,26 @@ println!("la reponse est {v}.", rep);
 ```
 
 Il existe par exemple l’extension asm!, qui permet au développeur d’intégrer du code assembleur en ligne, comme le fait le C via le mot-clé dédié __asm__.
+
 ```markdown
 #[cfg(target_os = "linux")]
 fn helloworld() {
- unsafe {
-   asm!(".pushsection .rodata
-                 msg: .asciz \"Hello World!\"
-         .popsection
-         lea msg(%rip), %rdi
-         call puts");
- }
-}
+                unsafe {
+                asm!(".pushsection .rodata
+                msg: .asciz \"Hello World!\"
+                .popsection
+                lea msg(%rip), %rdi
+                call puts");
+                        }
+                 }
 fn main() {
- helloworld();
-}
+          helloworld();
+          }
+          
 ```
 Les extensions **error!**, **warn!**, **info!** et **debug!** permettent d’ajouter des traces de log, activables et désactivables via une variable d’environnement.
+
+
 ### Utilisation de Rust sans la bibliothèque standard
 
 La bibliothèque standard de Rust fournit de nombreuses fonctionnalités utiles, mais suppose la prise en charge de diverses fonctionnalités de son système hôte: threads, mise en réseau, allocation de segment de mémoire, etc. Cependant, certains systèmes ne possèdent pas ces fonctionnalités et Rust peut également les utiliser! Pour ce faire, nous disons que la rouille nous ne voulons pas utiliser la bibliothèque standard via un attribut: #![no_std].
@@ -373,6 +394,6 @@ Pour l'utiliser #![no_std], ajoutez-le à votre racine de caisse:
 # ! [ no_std ]
 
 fn  plus_one ( x : i32 ) ->  i32 {
-     x  +  1 
-} 
+                                 x  +  1 
+                                 } 
 ```

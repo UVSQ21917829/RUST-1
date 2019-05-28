@@ -21,7 +21,8 @@ Nous avons crée un simple programme qui affiche le message (bonjour tout le mon
 ### Déclaration des variables
  En rust les variables sont toutes constantes par défaut de déclaration.
  
- ## Un exemple :
+ 
+### Exemple :  
  ```markdown
 let i = 1;
 
@@ -30,7 +31,7 @@ i = 2; // ceci n’est pas valide  !
 
 si on souhaite déclarer une variable mutable (modifiable) il faut utiliser le mot clé **mut** 
 
-## Un exemple :
+## Exemple :
 
  ```markdown
 let mut i = 1;
