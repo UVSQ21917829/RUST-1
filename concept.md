@@ -101,7 +101,7 @@ fn main()
 l'instance var1 est détruite en passant l'instance var1 comme argument dans la fonction drop(var1)
 
 
-### Rc <T>
+### Rc 
   Pour activer la propriété multiple, Rust a un type appelé Rc <T>, qui est une abréviation pour le comptage des références. Le type Rc <T> assure le suivi du nombre de références à une valeur qui détermine si une valeur est toujours utilisée ou non. S'il n'y a aucune référence à une valeur, la valeur peut être nettoyée sans qu'aucune référence ne devienne invalide.
   Nous utilisons le type Rc <T> lorsque nous voulons allouer des données sur le tas à plusieurs parties de notre programme à lire et nous ne pouvons pas déterminer au moment de la compilation quelle partie finira d'utiliser les données en dernier. Si nous savions quelle partie se terminerait en dernier, nous pourrions simplement faire de cette partie le propriétaire des données, et les règles de propriété normales appliquées au moment de la compilation prendraient effet.
   
@@ -121,4 +121,19 @@ fn main() {
     let b = Cons(3, Box::new(a));
     let c = Cons(4, Box::new(a));
 }
+```
+
+### RefCell et le modèle de mutabilité intérieure
+La mutabilité intérieure est un modèle de conception dans Rust qui vous permet de muter des données même lorsqu'il existe des références immuables à ces données. Pour muter les données, le modèle utilise du code non sécurisé dans une structure de données pour contourner les règles habituelles de Rust qui régissent la mutation et l'emprunt. Le code dangereux impliqué est ensuite enveloppé dans une API sûre, et le type externe est toujours immuable.
+Du coup les RefCell sont utiles pour garder un accès mutable sur un objet. Le "borrowing" est alors vérifié au runtime plutôt qu'à la compilation.
+```
+ use std::cell::RefCell;  
+fn main()  
+{  
+  let a = RefCell::new(15);  
+  let b = a.borrow();  
+  let c = a.borrow();  
+  println!("la valeur de b est : {}",b);  
+  println!("la valeur de c est : {}",c);  
+}  
 ```
