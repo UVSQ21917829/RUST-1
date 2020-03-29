@@ -23,7 +23,7 @@ fn main()
 Cons List est une structure de données qui est utilisée pour construire une nouvelle paire à partir des deux arguments, et cette paire est connue sous le nom de liste.
 Cons List contient deux éléments, l'élément actuel et le dernier élément. Le dernier élément de la liste est Nil car Nil ne contient pas l'élément suivant.
 
-Exexmple d'utilisation: 
+Exemple d'utilisation: 
 
 Nous pouvons utiliser le pointeur Box <T> car le compilateur sait combien d'espace le pointeur Box <T> nécessite. La taille du pointeur Box <T> ne changera pas pendant l'exécution d'un programme. Le pointeur Box <T> pointe vers la valeur List qui sera stockée sur le tas plutôt que dans la variante cons.
 ```
