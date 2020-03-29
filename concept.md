@@ -70,3 +70,29 @@ impl<T> Deref for MonBox<T>
 - Le trait Deref est implémenté sur le type MonBox.
 - Le trait Deref implémente la méthode deref() et la méthode deref() renvoie la référence de la variable 'a'.
 - Le type Target = T; est un type associé pour un trait Deref. Le type associé est utilisé pour déclarer le paramètre de type générique.
+### Drop trait 
+
+Le trait Drop est un pointeur intelligent qui nous permet de personnaliser ce qui se passe avec la valeur une fois qu'elle est hors de Scope. Le trait drop est utilisé pour implémenter la méthode drop() qui prend une référence mutable à Self.
+```
+struct Exemple{  
+  a : String,  
+}  
+  
+impl Drop for Exemple  
+{  
+  fn drop(&mut self)  
+  {  
+    println!("destruction de l'instance de Exemple : {}", self.a);  
+  }  
+}  
+  
+fn main()  
+{  
+  let var1 = Exemple{a : String::from("Bonjour")};  
+  drop(var1);  
+  let var2 = Exemple{a: String::from("Tous le monde")};  
+  println!("Ceration de l'instance de Exemple ");  
+}  
+
+```
+l'instance var1 est détruite en passant l'instance var1 comme argument dans la fonction drop(var1)
