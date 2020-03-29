@@ -73,6 +73,9 @@ impl<T> Deref for MonBox<T>
 ### Drop trait 
 
 Le trait Drop est un pointeur intelligent qui nous permet de personnaliser ce qui se passe avec la valeur une fois qu'elle est hors de Scope. Le trait drop est utilisé pour implémenter la méthode drop() qui prend une référence mutable à Self.
+
+
+##### Exemple d'implementation:
 ```
 struct Exemple{  
   a : String,  
@@ -96,3 +99,26 @@ fn main()
 
 ```
 l'instance var1 est détruite en passant l'instance var1 comme argument dans la fonction drop(var1)
+
+
+### Rc <T>
+  Pour activer la propriété multiple, Rust a un type appelé Rc <T>, qui est une abréviation pour le comptage des références. Le type Rc <T> assure le suivi du nombre de références à une valeur qui détermine si une valeur est toujours utilisée ou non. S'il n'y a aucune référence à une valeur, la valeur peut être nettoyée sans qu'aucune référence ne devienne invalide.
+  Nous utilisons le type Rc <T> lorsque nous voulons allouer des données sur le tas à plusieurs parties de notre programme à lire et nous ne pouvons pas déterminer au moment de la compilation quelle partie finira d'utiliser les données en dernier. Si nous savions quelle partie se terminerait en dernier, nous pourrions simplement faire de cette partie le propriétaire des données, et les règles de propriété normales appliquées au moment de la compilation prendraient effet.
+  
+##### Exemple d'implementation:
+```
+enum List {
+    Cons(i32, Box<List>),
+    Nil,
+}
+
+use crate::List::{Cons, Nil};
+
+fn main() {
+    let a = Cons(5,
+        Box::new(Cons(10,
+            Box::new(Nil))));
+    let b = Cons(3, Box::new(a));
+    let c = Cons(4, Box::new(a));
+}
+```
