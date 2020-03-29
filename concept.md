@@ -26,6 +26,7 @@ Cons List contient deux éléments, l'élément actuel et le dernier élément. 
 Exemple d'utilisation: 
 
 Nous pouvons utiliser le pointeur Box <T> car le compilateur sait combien d'espace le pointeur Box <T> nécessite. La taille du pointeur Box <T> ne changera pas pendant l'exécution d'un programme. Le pointeur Box <T> pointe vers la valeur List qui sera stockée sur le tas plutôt que dans la variante cons.
+  
 ```
 enum List {
    Cons(i32, Box),
@@ -41,3 +42,31 @@ let list = Cons(1,
                                               Box::new(Nil))))));
 }
 ```
+### Deref Trait
+
+Le trait Deref nous permet de personnaliser le comportement de déréférencement d'un opérateur. Le trait Deref est défini dans la bibliothèque standard qui est utilisée pour implémenter la méthode nommée deref.
+
+##### Exemple d'implementation:
+
+````
+struct MonBox<T>  
+{  
+  a : T,  
+}  
+use :: std::ops::Deref; 
+
+impl<T> Deref for MonBox<T>  
+{  
+  type Target = T;  
+  fn deref(&self) ->&T  
+  {  
+    &self.a  
+  }  
+} 
+
+````
+##### Explication
+
+- Le trait Deref est implémenté sur le type MonBox.
+- Le trait Deref implémente la méthode deref() et la méthode deref() renvoie la référence de la variable 'a'.
+- Le type Target = T; est un type associé pour un trait Deref. Le type associé est utilisé pour déclarer le paramètre de type générique.
