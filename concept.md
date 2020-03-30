@@ -137,3 +137,25 @@ fn main()
   println!("la valeur de c est : {}",c);  
 }  
 ```
+## Propiété (Ownership)
+
+La propriété est une caractéristique centrale de Rust et parmit l'un de ses points forts. Un système de propriété gère la mémoire avec un ensemble de règles que le compilateur vérifie au moment de la compilation.
+
+En Rust chaque valeur a une variable nommée propriétaire (Owner) de la valeur. Chaque donnée stocké dans Rust sera associé à un propriétaire. Il faut savoir que :
+
+- Chaque donnée ne peut avoir qu'un seul propriétaire à la fois.
+
+- Deux variables ne peuvent pas pointer vers le même emplacement mémoire. 
+
+Exemple:
+```markdown 
+fn main() 
+{ 
+    let matier_p : String = String::from("RUST"); 
+    let matier_d : String = matier_p ; // affecter matier_p à matier_d
+    let matier_t : String = matier_p; // Erreur!! parce que  la ressource a été déplacée.
+}
+
+```
+
+Dans le cas des types primitifs, le contenu d'une variable est copié dans une autre. Il n'y a donc pas de transfert de propriété. En effet, une variable primitive a besoin de moins de ressources qu'un objet. 
