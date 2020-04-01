@@ -87,7 +87,6 @@ for x in array.iter(){
     compteur += 1;
 }
 ```
-
 ### Tuple
 
 Les tuples sont des séquences finies. Tout d'abord ils sont fini, ils ont une taille, un nombre fixe d'éléments. Ils peuvent contenir plusieurs types différents. Cela contraste avec un tableau, qui ne peut contenir que des éléments du même type. Enfin, il s’agit de séquences, ce qui signifie qu’elles ont un ordre, et surtout qu’on peut y accéder par index (bien que de manière différente de celle des tableaux).
@@ -104,7 +103,22 @@ for x in &tuple.3 {
     compteur += 1;
 }
 ```
+### Slices
 
+Slice est un pointeur sur un bloc de mémoire. La slice peut être utilisée pour accéder à des parties de données stockées dans des blocs de mémoire contigus. Elle peut être utilisée avec des structures de données comme des tableaux, des vecteurs et des strings. Les slices sont des pointeurs vers les données réelles. La taille d’une slice est déterminée lors de l’exécution.
+
+Par exemple, si nous voulions prendre les 3 premiers éléments de notre tableau, cela ressemblerait à ceci:
+
+```markdown
+let array: [i32; 5] = [0, 1, 2, 3, 4];
+
+let t = &array[0..3]; 
+
+for x in t {
+	println!("x est {}", x):
+}
+```
+le **&** fait référence à la mémoire réelle de ce qu'un tableau "pointe" sur.
 
 ### Str
  
@@ -159,7 +173,7 @@ pour incrémenter il faudra utiliser la syntaxe :
           i += 1;
 ```
 
-### Les Conditions : 
+## Les Conditions : 
 
 On utilise les mêmes mot clé que java/c++/c :
 
@@ -199,14 +213,14 @@ match marque {
 
 ```
 
-Le _ est utilisé pour le cas ou le résultat ne signifie aucun des expressions précédentes, c’est l’équivalant de default  d’un Switch en Java  
+Le _est utilisé pour le cas ou le résultat ne signifie aucun des expressions précédentes, c’est l’équivalant de default  d’un Switch en Java  
 
-### Les boucles :
+## Les boucles :
 
-Les boucles en Rust sont comme les autres langage, elle continue à exécuter tant que la condition est toujours vérifiés 
-## La boucle while :
+Les boucles en Rust sont comme dans les autres langage, elles continuent à exécuter tant que la condition est toujours vérifié 
+### La boucle while :
 
-## Exemple :
+**Exemple :**
 
 ```markdown
         
@@ -218,15 +232,15 @@ while i < 10 {
 
 ```
 
-Ici le programme affichera a chaque fois « i inferieur a 10 » tant que le i inferieur (la condition i<10) 
+Ici le programme affichera a chaque fois « i inferieur a 10 » tant que **i** est inferieur (la condition i<10) 
 
 •	Vous noterez encore une fois qu'il n'y a pas de parenthèses autour de la condition !
 
 
-•	Tout comme pour les conditions, les accolades sont encore une fois obligatoires 
+•	Tout comme pour les conditions, les accolades sont obligatoires. 
 
-## Loop :
-Le boucle loop est un infinie ,c’est  l’équivalent de « while true » 
+### Loop :
+loop est une boucle infinie (toujours vrai). C’est  l’équivalent de « while true ». 
 ```markdown
 
 while true {
@@ -234,9 +248,9 @@ while true {
      //...
 }
 ```
-Sa condition d’arrêt se fait a la fin du programme en ajoutant les mots clé break ou return .
+Sa condition d’arrêt se fait à la fin du programme en ajoutant les mots clé **break** ou **return**.
 
-## Exemple 1 :
+**Exemple 1 :**
 ```markdown
 
 let mut i : i32 = 0;
@@ -251,7 +265,7 @@ loop {
 
 
 ```
-## Exemple 2 :
+**Exemple 2 :**
 ```markdown
 
 let mut i : i32 = 0;
@@ -267,8 +281,9 @@ loop {
 ```
 ### For :
 
-La boucle for consiste à exécuter le programme en suivant la condition de départ 
-## Exemple :
+**For** peut être utilisé pour itérer sur un Iterateur. L’une des façons les plus simples de créer un itérateur est d’utiliser la notation de l’intervale a..b. Cela donne des valeurs de a (inclus) à b (exclus) par pas de 1.
+
+**Exemple :**
 
 ```markdown
 
@@ -277,26 +292,29 @@ for i in 0..10 {
 }
 
 ```
- Ce programme affiche a chaque fois la valeur de i de 0 a 9
+ Ce programme affiche à chaque fois la valeur de i de 0 à 9
 
 ### Les fonctions :
+Les fonction dans Rust commencent par fn et elles ont un ensemble de parenthèses après le nom de la fonction. Les accolades indiquent au compilateur où commence et se termine le corps de la fonction. Les fonctions peuvent aussi renvoyer des valeurs. Nous ne nommons pas les valeurs de retour, mais nous déclarons leur type après une flèche (->).
 
- Pour utiliser une fonction il faut suivre la syntaxe suivante 
+Pour utiliser une fonction, il faut suivre la syntaxe suivante:
+ 
 ```markdown 
  
 fn nom_fonction(les variable d’entrer)->type_sortie
 ```
-## exemple :
+**Exemple :**
 ```markdown
 fn addition(nb1: i32, nb2: i32) -> i32;
 
 
 ```
 
-ici on a déclarer une fonction nommé addition qui prend en paramètre deux variable de type i32 et qui return un i32 
+Ici, on a déclaré une fonction nommé **addition** qui prend en paramètre deux variable de type **i32** et qui return un **i32** 
 
-## exemple d’utilisation :
+**Exemple d’utilisation :**
 ```markdown
+
 fn main() {
     println!("1 + 2 = {}", addition(1, 2));
 }
