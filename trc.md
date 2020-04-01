@@ -1,4 +1,4 @@
-[**Base du langage**](https://uvsq21807686.github.io/RUST-1)-----[**Concepts avancés**](https://uvsq21807686.github.io/RUST-1/concept)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST-1/std)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST-1/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST-1/rsc)-----[**Exercices d'apprentissages**](https://uvsq21807686.github.io/RUST-1/exo)
+[**Base du langage**](https://UVSQ21917829.github.io/RUST-1)-----[**Concepts avancés**](https://UVSQ21917829.github.io/RUST-1/concept)-----[**Bibliothèques standards**](https://UVSQ21917829.github.io/RUST-1/std)-----[**Outils de développement**](https://UVSQ21917829.github.io/RUST-1/index2)-----[**Ressources d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/rsc)-----[**Exercices d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/exo)
 
 
 ## Les Bibliothèques tierce en RUST

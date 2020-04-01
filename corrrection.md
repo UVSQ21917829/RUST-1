@@ -1,4 +1,4 @@
-[**Base du langage**](https://uvsq21807686.github.io/RUST/)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)
+[**Base du langage**](https://UVSQ21917829.github.io/RUST/)-----[**Bibliothèques standards**](https://UVSQ21917829.github.io/RUST/std)-----[**Bibliothèques tierces**](https://UVSQ21917829.github.io/RUST/trc)-----[**Outils de développement**](https://UVSQ21917829.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://UVSQ21917829.github.io/RUST/rsc)
 
 ## Correction des exercices :
 

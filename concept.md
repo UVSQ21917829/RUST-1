@@ -1,3 +1,6 @@
+[**Base du langage**](https://UVSQ21917829.github.io/RUST-1)----- [**Bibliothèques standards**](https://UVSQ21917829.github.io/RUST-1/std) -----[**Bibliothèques tierces**](https://UVSQ21917829.github.io/RUST-1/trc)-----[**Outils de développement**](https://UVSQ21917829.github.io/RUST-1/index2)-----[**Ressources d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/rsc)-----[**Exercices d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/exo)   
+
+
 # Les concepts avancés
 ## Les pointeurs intelligents (Smart pointer) 
 
@@ -141,7 +144,7 @@ fn main()
 
 La propriété est une caractéristique centrale de Rust et parmit l'un de ses points forts. Un système de propriété gère la mémoire avec un ensemble de règles que le compilateur vérifie au moment de la compilation.
 
-En Rust chaque valeur a une variable nommée propriétaire (Owner) de la valeur. Chaque donnée stocké dans Rust sera associé à un propriétaire. Il faut savoir que :
+En Rust chaque valeur a une variable nommée propriétaire (Owner) de la valeur. Chaque donnée stockée dans Rust sera associé à un propriétaire. Il faut savoir que :
 
 - Chaque donnée ne peut avoir qu'un seul propriétaire à la fois.
 
@@ -159,3 +162,6 @@ fn main()
 ```
 
 Dans le cas des types primitifs, le contenu d'une variable est copié dans une autre. Il n'y a donc pas de transfert de propriété. En effet, une variable primitive a besoin de moins de ressources qu'un objet. 
+## Généricité
+
+La généricité permet de gérer efficacement la duplication des concepts et de réduire les répétitions au sein du code dans de nombreux cas. Elle à généraliser les types et des fonctionnalités à des cas plus larges. Etre générique nécessite de bien savoir spécifier sur quels types un type générique est réellement considéré comme valide. L'utilisation la plus simple et la plus courante des génériques concerne les paramètres de type.
