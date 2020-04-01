@@ -49,6 +49,17 @@ let i : i32 = 0;
 // ou :
 let i = 0i32;
 ```
+### Les flottants
+
+Un flottant est un nombre avec la virgule. Les types flottantes de Rust sont f32 et f64, qui sont respectivement de 32 bits et 64 bits. Le type par défaut est f64.
+````
+fn main() {
+
+    let x = 0.0; // Variable de type float 64 bit: type inplicite
+    let xx: f64 = 0.0; // Variable de type float 64 bit: type explicite 
+}
+````
+
 ### Bool
 
 Un booléen standard. Peut être vrai ou faux
