@@ -1,4 +1,4 @@
-[**Base du langage**](https://uvsq21807686.github.io/RUST)-----[**Concepts avancés**](https://uvsq21807686.github.io/RUST/concept)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Exercices d'apprentissages**](https://uvsq21807686.github.io/RUST/exo)
+[**Base du langage**](https://uvsq21807686.github.io/RUST-1)-----[**Concepts avancés**](https://uvsq21807686.github.io/RUST-1/concept)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST-1/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST-1/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST-1/index2)-----[**Exercices d'apprentissages**](https://uvsq21807686.github.io/RUST-1/exo)
 
 ## Ressources d’apprentissages 
   
