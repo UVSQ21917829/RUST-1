@@ -213,7 +213,7 @@ match marque {
 
 ```
 
-Le _est utilisé pour le cas ou le résultat ne signifie aucun des expressions précédentes, c’est l’équivalant de default  d’un Switch en Java  
+Le _ est utilisé pour le cas ou le résultat ne signifie aucun des expressions précédentes, c’est l’équivalant de default  d’un Switch en Java  
 
 ## Les boucles :
 
@@ -326,37 +326,7 @@ fn addition(nb1: i32, nb2: i32) -> i32 {
 
 Ce programme affiche 1 + 2 =3
 
-## Gestion de la mémoire:
 
- Rust propose une nouvelle façon de gérer la mémoire, qui se veut sûre et garantie à la compilation, ce qui permet d’en limiter l’impact sur les performances à l’exécution. Autant vous prévenir tout de suite : la courbe d’apprentissage de Rust est donc plus lente que dans d’autres langages mais largement compensée en qualité et fiabilité des programmes produits. Concrètement, vous allez transpirer au début mais serez fiers de la qualité de vos productions.
- 
- **Ownership** : Rust contrôle la gestion de la mémoire à travers des règles strictes,lorsqu'un cadre de pile est quitté, ses allocations locales sont toutes libérées et ses références aux zones sont supprimées.
-
- Rust est muni d'un système « d'appartenance » qui permet d'écarter les conflits les plus communs lorsqu'une ressource est utilisée à plusieurs endroits.
-Bien que ce dernier soit très pratique, il demande d'avoir une certaine rigueur quant à la déclaration de nos ressources, sans quoi vous risqueriez de vous attirer les foudres du compilateur.
-Rust possède une syntaxe rigide et un typage fort permettant de s’assurer qu’il n’y ait aucune fuite mémoire après compilation. Au moment de la compilation, le code est analysé de manière à ce que le langage indique directement les problèmes rencontrés dans la gestion de la mémoire. Le compilateur de Rust contraint ainsi le programmeur à corriger ses erreurs avant toute exécution du programme. Il est donc impossible d’avoir un dépassement de mémoire tampon.
-
-
-## smart pointers
-Dans Rust, les pointeurs intelligents ne sont pas seulement des pointeurs, mais également une structure de données. Ils sont également disponibles dans de nombreuses autres langues, mais leur origine est en c ++. Les pointeurs intelligents sont généralement implémentés via des structures.
-Le motif de pointeur intelligent est un motif de conception général utilisé fréquemment dans Rust . De nombreuses bibliothèques ont leurs propres pointeurs intelligents et vous pouvez même écrire les vôtres. Nous allons couvrir les pointeurs intelligents les plus courants dans la bibliothèque standard:
-
-•Box<T> pour allouer des valeurs sur le tas.
-	
-•Rc<T>, un type de comptage de référence qui permet la propriété multiple.
-	
-•Ref<T>et RefMut<T>, accessible via RefCell<T>, un type qui applique les règles d'emprunt au moment de l'exécution au lieu du moment de la compilation
-
-
-Voici la syntaxe d'utilisation Box<T>
-	
-	
-```markdown
-	fn main() {
-    let b = Box::new(5);
-    println!("b = {}", b);
-}
-```
 
  Et pour plus de documentations veuillez consulter ces **liens suivants**	:
    
