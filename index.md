@@ -16,10 +16,10 @@ fn main() {
 }
 ```
 
-Nous avons crée un simple programme qui affiche le message (bonjour tout le monde).
+Nous avons créé un simple programme qui affiche le message (bonjour tout le monde).
 
 ### Déclaration des variables
- En rust les variables sont toutes constantes par défaut de déclaration.
+ En rust les variables sont toutes constantes par défaut de déclaration et elles sont déclarées par **let**.
  
  
 ### Exemple :  
@@ -29,7 +29,7 @@ let i = 1;
 i = 2; // ceci n’est pas valide  !
 ```
 
-si on souhaite déclarer une variable mutable (modifiable) il faut utiliser le mot clé **mut** 
+Si on souhaite déclarer une variable mutable (modifiable) il faut utiliser le déclarateur  **mut** 
 
 ## Exemple :
 
@@ -38,10 +38,11 @@ let mut i = 1;
 
 i = 2; // ceci est valide  !
 ```
-## les Types :
+## les Types prémitifs:
 
-  Comme touts les autres langages il existe plusieurs types de variables en rust,on a toujours des entiers, des flottants ,Strings etc.., La seule différence viendra de leur écriture. Par exemple, pour déclarer un entier de 32 bits, vous ferez :
-
+  Comme touts les autres langages il existe plusieurs types de variables en rust,on a toujours des entiers, des flottants ,Strings etc.., La seule différence viendra de leur écriture. 
+### Entier
+Un nombre entier est un nombre que l’on peut écrire sans virgule. En Rust les types d’entiers signés commencent par i et non signés par u. 
 
  ```markdown
 let i : i32 = 0;
@@ -64,8 +65,10 @@ let a = 'a';
 let b = 'b';
 let keyboard = '⌨';
 ```
+## Types composés
+Les types composés peuvent regrouper plusieurs valeurs en un seul type
 
-### tableau
+### Tableau
 Un tableau est une taille fixe, une collection d'éléments de même type.
 
 Il est déclaré comme:
@@ -84,36 +87,8 @@ for x in array.iter(){
     compteur += 1;
 }
 ```
-### Slices
 
-Une tranche est une taille dynamique, "tranche" dans une collection d'éléments.
-
-Par exemple, si nous voulions prendre les 3 premiers éléments de notre tableau, cela ressemblerait à ceci:
-
-```markdown
-let array: [i32; 5] = [0, 1, 2, 3, 4];
-
-let t = &array[0..3]; 
-
-for x in t {
-	println!("x est {}", x):
-}
-```
-le **&** fait référence à la mémoire réelle de ce qu'un tableau "pointe" sur.
-
-### Str
- 
- Str est une "tranche de chaîne" et constitue le type de chaîne le plus primitif.
-
-```markdown
-let str = "Bonjour je suis une chaine de caractere ";
-
-println!("la valeur de notre variable est : {}", str);
-
-```
-
-
-### tuple
+### Tuple
 
 Les tuples sont des séquences finies. Tout d'abord ils sont fini, ils ont une taille, un nombre fixe d'éléments. Ils peuvent contenir plusieurs types différents. Cela contraste avec un tableau, qui ne peut contenir que des éléments du même type. Enfin, il s’agit de séquences, ce qui signifie qu’elles ont un ordre, et surtout qu’on peut y accéder par index (bien que de manière différente de celle des tableaux).
 
@@ -129,19 +104,19 @@ for x in &tuple.3 {
     compteur += 1;
 }
 ```
-### Reference
 
 
-Il y a un deuxième type de référence: &mut T. Une "référence mutable" vous permet de muter la ressource que vous empruntez. Par exemple:
+### Str
+ 
+ Str est une "slice de chaîne" et constitue le type de chaîne le plus primitif.
+
 ```markdown
-let  mut  x  =  5 ; 
-{ let y = & mut x ;
-    * y + = 1 ; 
-} println ! ( "{}" , x );
-```
-Cela va afficher 6. Nous faisons y référence à x.
 
-En Gros on a : une ou plusieurs références ( &T) à une ressource et exactement une référence mutable ( &mut T).
+let str = "Bonjour je suis une chaine de caractere ";
+
+println!("la valeur de notre variable est : {}", str);
+
+```
 
 ### Struct
 
@@ -163,6 +138,19 @@ fn  main () {
 
 Donc pour résumer, voici une petite liste des différents types de base disponibles : i8 (un entier signé de 8 bits),i16,i32,i64,u18(un entier non signé de 8bits),u16,u32,u64,f32(un flottant de 32bits),f64,St, reference, tuple, tableau, slice, struct.
 
+## Reference
+
+
+Il y a un deuxième type de référence: &mut T. Une "référence mutable" vous permet de muter la ressource que vous empruntez. Par exemple:
+```markdown
+let  mut  x  =  5 ; 
+{ let y = & mut x ;
+    * y + = 1 ; 
+} println ! ( "{}" , x );
+```
+Cela va afficher 6. Nous faisons y référence à x.
+
+En Gros on a : une ou plusieurs références ( &T) à une ressource et exactement une référence mutable ( &mut T).
 
 ## Incrémentation : 
 pour incrémenter il faudra utiliser la syntaxe : 
