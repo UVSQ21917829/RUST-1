@@ -310,7 +310,7 @@ fn addition(nb1: i32, nb2: i32) -> i32;
 
 ```
 
-Ici, on a déclaré une fonction nommé **addition** qui prend en paramètre deux variable de type **i32** et qui return un **i32** 
+Ici, on a déclaré une fonction nommée **addition** qui prend en paramètre deux variables de type **i32** et qui retourne une valeur de type **i32** 
 
 **Exemple d’utilisation :**
 ```markdown
