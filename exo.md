@@ -4,7 +4,7 @@
 
 
 ### Exercice 1 (Les boucles et conditions) :
-   Ecrire en deux méthode le programme qui calcule la factorielle de 10 et indique à l'écran le résultat.
+   Ecrire en deux méthode le programme qui calcule la factorielle de 10 et affiche à l'écran le résultat.
      
 
 ### Exercice 2 (La boucle while) :
@@ -23,7 +23,7 @@
 
 ### Exercice 4(Les tableaux) :
 
-  Ecrire un programme RUST qui rempli et affiche les éléments d'un tableau 
+  Ecrire un programme RUST qui rempli et affiche les éléments d'un tableau. 
   
 
 
@@ -42,11 +42,11 @@ fonction sur plusieurs exemples.
 
 ### Exercice 7 (les fonctions et tests unitaires):
 
- Ecrire une fonction qui cacul la devision entre deux entiers , cette fonction doit être associée à des tests unitaires
+ Ecrire une fonction qui cacul la division entre deux entiers , cette fonction doit être associée à des tests unitaires.
 
 ###  Exercice 8 (bibliotheque standard des fichiers):
 
-Ecrire un programme qui crée un nouveau fichier et y écrit des octets
+Ecrire un programme qui crée un nouveau fichier et y écrit des octets.
 
 
  Pour consulter cliquer sur ce lien : [**la correction**](https://uvsq21807686.github.io/RUST/corrrection),
