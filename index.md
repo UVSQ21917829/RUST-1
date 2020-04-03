@@ -6,7 +6,7 @@
 
 ## 1.1 introduction
 
- Rust est un langage de programmation système moderne mettant l'accent sur la sécurité, la vélocité et la concurrence, compilé et multi paradigme. C'est un croisement entre langage impératif (C), objet (C++), fonctionnel (Ocaml) et concurrent (Erlang). Le développement du langage RUST a commencé depuis 2009 par la fondation Mozila et aussi avec l’aide de la communauté des développeurs Rust qui sont très présent sur Github.
+ Rust est un langage de programmation système moderne mettant l'accent sur la sécurité, la vélocité et la concurrence, compilé et multi paradigme. C'est un croisement entre langage impératif (C), objet (C++), fonctionnel (Ocaml) et concurrent (Erlang). Le développement du langage RUST a commencé depuis 2009 par la fondation Mozila et aussi à l’aide de la communauté des développeurs Rust qui sont très présent sur Github.
 
 ### Premier programme :
 
@@ -100,7 +100,7 @@ for x in array.iter(){
 ```
 ### Tuple
 
-Les tuples sont des séquences finies. Tout d'abord ils sont fini, ils ont une taille, un nombre fixe d'éléments. Ils peuvent contenir plusieurs types différents. Cela contraste avec un tableau, qui ne peut contenir que des éléments du même type. Enfin, il s’agit de séquences, ce qui signifie qu’elles ont un ordre, et surtout qu’on peut y accéder par index (bien que de manière différente de celle des tableaux).
+Les tuples sont des séquences finies. Tout d'abord ils sont finis, ils ont une taille, un nombre fixe d'éléments. Ils peuvent contenir plusieurs types différents. Cela contraste avec un tableau, qui ne peut contenir que des éléments du même type. Enfin, il s’agit de séquences, ce qui signifie qu’elles ont un ordre, et surtout qu’on peut y accéder par index (bien que de manière différente de celle des tableaux).
 
 ```markdown
 let tuple = ("Bonjour", 42, "Monde", [3,6,9]);
@@ -228,7 +228,7 @@ Le _ est utilisé pour le cas ou le résultat ne signifie aucun des expressions 
 
 ## Les boucles :
 
-Les boucles en Rust sont comme dans les autres langage, elles continuent à exécuter tant que la condition est toujours vérifié 
+Les boucles en Rust sont comme dans les autres langages, elles continuent à exécuter tant que la condition est toujours vérifié 
 ### La boucle while :
 
 **Exemple :**
