@@ -5,15 +5,15 @@ Ce dépôt contient la documenntation du Rust et un répertoire **correction_exo
 
 Chaque fichier s'execute avec la commande :
 
-'''
+```
 rustc fichier.rs
-'''
+```
 Et il se lance avec la commande 
 
-'''
+```
 ./fichier.exe
 
-'''
+```
 
 # Lien cers la documentation
 
