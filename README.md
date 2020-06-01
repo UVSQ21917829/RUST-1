@@ -15,11 +15,11 @@ Et il se lance avec la commande
 
 ```
 
-# Lien cers la documentation
+# Lien vers la documentation
 
 [**Documenation**](https://UVSQ21917829.github.io/RUST-1/index)
 
-# Lien vers le projet Gestionnaire des images
+# Lien vers le projet Gestionnaire des photos
 
 [**Dépôt**](https://github.com/UVSQ21917829/RUST)
 
