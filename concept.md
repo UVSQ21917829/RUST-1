@@ -144,9 +144,9 @@ fn main()
 
 La propriété est une caractéristique centrale de Rust et parmit l'un de ses points forts. Un système de propriété gère la mémoire avec un ensemble de règles que le compilateur vérifie au moment de la compilation.
 
-En Rust chaque valeur a une variable nommée propriétaire (Owner) de la valeur. Chaque donnée stockée dans Rust sera associé à un propriétaire. Il faut savoir que :
+En Rust chaque valeur a une variable nommée propriété (Owner) de la valeur. Chaque donnée stockée dans Rust sera associéé à une propriété. Il faut savoir que :
 
-- Chaque donnée ne peut avoir qu'un seul propriétaire à la fois.
+- Chaque donnée ne peut avoir qu'une seule propriété à la fois.
 
 - Deux variables ne peuvent pas pointer vers le même emplacement mémoire. 
 
@@ -164,4 +164,4 @@ fn main()
 Dans le cas des types primitifs, le contenu d'une variable est copié dans une autre. Il n'y a donc pas de transfert de propriété. En effet, une variable primitive a besoin de moins de ressources qu'un objet. 
 ## Généricité
 
-La généricité permet de gérer efficacement la duplication des concepts et de réduire les répétitions au sein du code dans de nombreux cas. Elle à généraliser les types et des fonctionnalités à des cas plus larges. Etre générique nécessite de bien savoir spécifier sur quels types un type générique est réellement considéré comme valide. L'utilisation la plus simple et la plus courante des génériques concerne les paramètres de type.
+La généricité permet de gérer efficacement la duplication des concepts et de réduire les répétitions au sein du code dans de nombreux cas. Elle sert à généraliser les types et des fonctionnalités à des cas plus larges. Etre générique nécessite de bien savoir spécifier sur quels types un type générique est réellement considéré comme valide. L'utilisation la plus simple et la plus courante des génériques concerne les paramètres de type.
