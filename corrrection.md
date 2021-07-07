@@ -1,4 +1,4 @@
-[**Base du langage**](https://uvsq21807686.github.io/RUST/)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)
+[**Base du langage**](https://UVSQ21917829.github.io/RUST-1/)-----[**Bibliothèques standards**](https://UVSQ21917829.github.io/RUST-1/std)-----[**Bibliothèques tierces**](https://UVSQ21917829.github.io/RUST-1/trc)-----[**Outils de développement**](https://UVSQ21917829.github.io/RUST-1/index2)-----[**Ressources d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/rsc)
 
 ## Correction des exercices :
 
@@ -79,13 +79,16 @@
 
 ```markdown
 fn main() {
-          let mut t : Vec<i32> = Vec::new();
-          t.push(0);
-          t.push(1);
-          t.push(2);
-          let s = &t;
-          println!("{:?}",s);
-          }
+    //remplir le tableau
+    let array: [i32; 5] = [0, 1, 2, 3, 4];
+
+    // affichage
+    let mut compteur = 0;
+    for x in array.iter(){
+    println!("l'element a l'index {} est {}", compteur, x);
+    compteur += 1;
+}
+}
 
 ``` 
 ### Exercice 5 :

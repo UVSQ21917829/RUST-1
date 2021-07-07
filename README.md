@@ -1,36 +1,33 @@
-# RUST
-
-  Prise de notes 
+# RUST-1
 
 
+Ce dépôt contient la documenntation du Rust et un répertoire **correction_exos** dont vous allez trouver un projet Rust pour la correction des exercices.
 
-# Compilation
-on se positionne sur C:\Users\ordinateur\Desktop\mes\mohand
-cargo run
-cargo test
+Chaque fichier s'execute avec la commande :
 
+```
+rustc fichier.rs
+```
+Et il se lance avec la commande 
 
-# plan fonctionnel
-Cette application propose une interface en ligne de commandes pour la l’edition et la gestion des notes. 
+```
+./fichier.exe
 
-# La liste des commandes disponibles dans l'application est la suivante :
-1. Creer un fichier:Création d’une note.txt qui n’existe pas
-2. ecrire dans un fichier:
-3. supprimer un fichier:
-4. lister les fichiers:Affichage la liste des notes existantes.
-5. lire un fichier:lire son contenu
-6. quitter: ");
+```
 
- 
+# Lien vers la documentation
 
+[**Documenation**](https://UVSQ21917829.github.io/RUST-1/index)
 
+# Lien vers le projet Gestionnaire des photos
+
+[**Dépôt**](https://github.com/UVSQ21917829/RUST)
 
 # Documentation
 https://doc.rust-lang.org/std/index.html
 
  
 
-A la fin de quelques methodes on a implémenté des tests unitaires.
 
 
 

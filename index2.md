@@ -1,9 +1,9 @@
-[**Base du langage**](https://uvsq21807686.github.io/RUST)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc)-----[**Exercices d'apprentissages**](https://uvsq21807686.github.io/RUST/exo)   
+[**Base du langage**](https://UVSQ21917829.github.io/RUST-1)-----[**Concepts avancés**](https://UVSQ21917829.github.io/RUST-1/concept)-----[**Bibliothèques standards**](https://UVSQ21917829.github.io/RUST-1/std)-----[**Bibliothèques tierces**](https://UVSQ21917829.github.io/RUST-1/trc)-----[**Ressources d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/rsc)-----[**Exercices d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/exo)   
 
 
 ## Outils de développement 
 
-Pour pouvoir développer sur Rust , il va falloir utiliser le bon outils , pour programmer sur RUST vous pouvez utiliser leur éditeur de code [**play.rust-lang.org**](https://play.rust-lang.org/)
+Pour pouvoir développer sur Rust , il va falloir utiliser le bon outils , RUST à un éditeur de code [**play.rust-lang.org**](https://play.rust-lang.org/)
 
 ![figure](outils.png)
 

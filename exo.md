@@ -1,10 +1,10 @@
-[**Base du langage**](https://uvsq21807686.github.io/RUST/)-----[**Bibliothèques standards**](https://uvsq21807686.github.io/RUST/std)-----[**Bibliothèques tierces**](https://uvsq21807686.github.io/RUST/trc)-----[**Outils de développement**](https://uvsq21807686.github.io/RUST/index2)-----[**Ressources d'apprentissages**](https://uvsq21807686.github.io/RUST/rsc) 
+[**Base du langage**](https://UVSQ21917829.github.io/RUST-1/)-----[**Concepts avancés**](https://UVSQ21917829.github.io/RUST-1/concept)-----[**Bibliothèques standards**](https://UVSQ21917829.github.io/RUST-1/std)-----[**Bibliothèques tierces**](https://UVSQ21917829.github.io/RUST-1/trc)-----[**Outils de développement**](https://UVSQ21917829.github.io/RUST-1/index2)-----[**Ressources d'apprentissages**](https://UVSQ21917829.github.io/RUST-1/rsc) 
 
 ## Exercices d'apprentissage :
 
 
 ### Exercice 1 (Les boucles et conditions) :
-   Ecrire en deux méthode le programme qui calcule la factorielle de 10 et indique à l'écran le résultat.
+   Ecrire en deux méthode le programme qui calcule la factorielle de 10 et affiche à l'écran le résultat.
      
 
 ### Exercice 2 (La boucle while) :
@@ -23,7 +23,7 @@
 
 ### Exercice 4(Les tableaux) :
 
-  Ecrire un programme RUST qui rempli et affiche les éléments d'un tableau 
+  Ecrire un programme RUST qui rempli et affiche les éléments d'un tableau. 
   
 
 
@@ -42,13 +42,13 @@ fonction sur plusieurs exemples.
 
 ### Exercice 7 (les fonctions et tests unitaires):
 
- Ecrire une fonction qui cacul la devision entre deux entiers , cette fonction doit être associée à des tests unitaires
+ Ecrire une fonction qui cacul la division entre deux entiers , cette fonction doit être associée à des tests unitaires.
 
 ###  Exercice 8 (bibliotheque standard des fichiers):
 
-Ecrire un programme qui crée un nouveau fichier et y écrit des octets
+Ecrire un programme qui crée un nouveau fichier et y écrit des octets.
 
 
- Pour consulter cliquer sur ce lien : [**la correction**](https://uvsq21807686.github.io/RUST/corrrection),
+ Pour consulter cliquer sur ce lien : [**la correction**](https://UVSQ21917829.github.io/RUST-1/corrrection),
 
 
